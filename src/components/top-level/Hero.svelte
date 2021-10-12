@@ -4,8 +4,6 @@
 </script>
 
 <section class="hero">
-    <div class="overlay"></div>
-
     <div class="content">
         <Bubble>
             Hi there!
@@ -28,7 +26,7 @@
 
 <style>
     .hero {
-        background-image:url(images/hero.webp);
+        background-image: url(images/hero.webp);
         height: 96vh;
         min-height: 100%;
         position: relative;
@@ -43,17 +41,6 @@
         justify-content: center;
     }
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        background: #111111;
-        z-index: -1;
-    }
-
     .content {
         display: flex;
         flex-direction: column;
@@ -64,13 +51,13 @@
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 3.5rem;
         color: white;
+        text-transform: none;
         margin: 0;
     }
 
     p {
-        font-size: 1rem;
         margin: 1.5rem 0;
         color: white;
     }
@@ -79,9 +66,9 @@
         background-color: white;
         padding: 1rem 1.5rem;
         text-transform: uppercase;
-        color: #0779e4;
+        color: var(--accent-color);
         border: none;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         font-size: 0.75rem;
         font-weight: bold;
         cursor: pointer;
@@ -91,6 +78,6 @@
     button:hover {
         box-shadow: none;
         transition: all .25s;
-        color: #0779e4cc;
+        opacity: 0.92;
     }
 </style>

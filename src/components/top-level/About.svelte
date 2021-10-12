@@ -15,9 +15,7 @@
     .about {
         max-width: 1024px;
         margin: 0 auto;
-
         display: flex;
-
         padding: 5rem;
     }
 
@@ -27,13 +25,5 @@
 
     .content {
         margin-left: 1rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-        font-weight: bold;
-        color: #000000cc;
-        margin: 1rem 0;
-        text-transform: uppercase;
     }
 </style>
