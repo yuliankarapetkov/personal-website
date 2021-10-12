@@ -29,7 +29,7 @@
 <style>
     .hero {
         background-image:url(images/hero.webp);
-        height: 100vh;
+        height: 96vh;
         min-height: 100%;
         position: relative;
         background-size: cover;
