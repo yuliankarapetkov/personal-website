@@ -61,23 +61,4 @@
         margin: 1.5rem 0;
         color: white;
     }
-
-    button {
-        background-color: white;
-        padding: 1rem 1.5rem;
-        text-transform: uppercase;
-        color: var(--accent-color);
-        border: none;
-        border-radius: var(--border-radius);
-        font-size: 0.75rem;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
-    }
-
-    button:hover {
-        box-shadow: none;
-        transition: all .25s;
-        opacity: 0.92;
-    }
 </style>
