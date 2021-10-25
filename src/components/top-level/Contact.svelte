@@ -1,40 +1,33 @@
-<section class="contact">
-    <div class="content">
-        <h2>Contact me</h2>
+<script lang="ts">
+    import Section from '../Section.svelte';
 
-        <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-        </p>
+</script>
 
-        <a class="link" href="mailto:yulian.karapetkov@gmail.com">
-            yulian.karapetkov@gmail.com
-        </a>
+<Section title="Contact me" style="accent">
+    <h2>Contact me</h2>
 
-        <a class="button" href="mailto:yulian.karapetkov@gmail.com">
-            Hire me
-        </a>
-    </div>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+    </p>
 
+    <a class="link" href="mailto:yulian.karapetkov@gmail.com">
+        yulian.karapetkov@gmail.com
+    </a>
 
-</section>
+    <a class="button" href="mailto:yulian.karapetkov@gmail.com">
+        Hire me
+    </a>
+</Section>
 
 <style>
-    .contact {
+    /* .contact {
         display: flex;
         max-width: 1024px;
         margin: 0 auto;
         padding: 5rem;
         background-color: var(--accent-color);
         color: white;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
+    } */
 
     h2 {
         color: white;
