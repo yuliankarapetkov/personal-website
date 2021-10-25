@@ -27,7 +27,7 @@
     .skill {
         display: flex;
         flex-direction: column;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
 
         --bar-height: 0.375rem;
     }
@@ -35,8 +35,8 @@
     .name {
         text-transform: uppercase;
         font-size: 0.875rem;
-        text-align: center;
-        margin-bottom: 0.25rem;
+        text-align: left;
+        margin-bottom: 1rem;
     }
 
     i {
