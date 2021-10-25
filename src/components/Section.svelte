@@ -32,11 +32,14 @@
 
     h2 {
         margin-bottom: 4rem;
-        /* font-size: 1.5rem; */
     }
 
     .accent {
         background-color: var(--accent-color);
+        color: white;
+    }
+
+    .accent h2 {
         color: white;
     }
 </style>
