@@ -4,17 +4,7 @@
 
     const skills = [
         {
-            name: 'React',
-            percentage: 80,
-            icon: 'fab fa-react'
-        },
-        {
-            name: 'React Native',
-            percentage: 80,
-            icon: 'fab fa-react'
-        },
-        {
-            name: 'Svelte/Sapper',
+            name: 'Svelte/SvelteKit',
             percentage: 100,
             icon: 'svelte.svg'
         },
@@ -24,18 +14,33 @@
             icon: 'fab fa-angular'
         },
         {
+            name: 'React',
+            percentage: 90,
+            icon: 'fab fa-react'
+        },
+        {
+            name: 'React Native',
+            percentage: 90,
+            icon: 'fab fa-react'
+        },
+        {
             name: 'Ionic',
             percentage: 80,
             icon: 'ionic.svg'
         },
         {
+            name: 'Node.js/Express.js',
+            percentage: 70,
+            icon: 'fab fa-node-js'
+        },
+        {
             name: 'NestJS',
-            percentage: 60,
+            percentage: 80,
             icon: 'nestjs.svg'
         },
         {
             name: 'Firebase',
-            percentage: 80,
+            percentage: 90,
             icon: 'firebase.svg'
         },
         {
@@ -50,14 +55,37 @@
         }
     ];
 
+    const half = Math.ceil(skills.length / 2);  
+
 </script>
 
 <Section title="Skills">
-    {#each skills as skill}
-        <Skill {...skill} />
-    {/each}
+    <div class="container">
+
+        <div class="skills">
+            {#each skills.slice(0, half) as skill}
+                <Skill {...skill} />
+            {/each}
+        </div>
+
+        <div class="skills">
+            {#each skills.slice(half) as skill}
+                <Skill {...skill} />
+            {/each}
+        </div>
+
+    </div>
 </Section>
 
 <style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .skills {
+        flex: calc(50% - 1rem) 0 0;
+    }
 
 </style>

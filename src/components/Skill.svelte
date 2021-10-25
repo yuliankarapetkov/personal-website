@@ -47,7 +47,7 @@
         height: 0.875rem;
         position: relative;
         top: 2px;
-        filter: invert(66%) sepia(27%) saturate(6456%) hue-rotate(3deg) brightness(107%) contrast(105%);
+        filter: invert(31%) sepia(38%) saturate(4941%) hue-rotate(195deg) brightness(96%) contrast(94%);
     }
 
     .icon,
