@@ -3,6 +3,7 @@
     import Contact from '../components/top-level/Contact.svelte';
     import Hero from '../components/top-level/Hero.svelte';
     import Profiles from '../components/top-level/Profiles.svelte';
+    import Recommendations from '../components/top-level/Recommendations.svelte';
     import Skills from '../components/top-level/Skills.svelte';
 
 </script>
@@ -15,6 +16,8 @@
     <Skills />
 
     <Profiles />
+
+    <Recommendations />
 
     <Contact />
 </div>
