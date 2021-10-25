@@ -1,4 +1,6 @@
 <script lang="ts">
+    import Icon from "./Icon.svelte";
+
     export let name: string;
     export let percentage: number;
     export let icon: string;
@@ -8,11 +10,7 @@
 <div class="skill">
     <span class="name">
         {#if icon}
-            {#if icon.includes('.svg')}
-                <img class="icon" src={`/icons/${icon}`} alt={name} />
-            {:else}
-                <i class={icon} />
-            {/if}
+            <Icon {icon} alt={name} />
         {/if}
 
         {name}
@@ -33,26 +31,12 @@
     }
 
     .name {
+        display: flex;
+        align-items: center;
         text-transform: uppercase;
         font-size: 0.875rem;
         text-align: left;
         margin-bottom: 1rem;
-    }
-
-    i {
-        color: var(--accent-color);
-    }
-
-    .icon {
-        height: 0.875rem;
-        position: relative;
-        top: 2px;
-        filter: invert(31%) sepia(38%) saturate(4941%) hue-rotate(195deg) brightness(96%) contrast(94%);
-    }
-
-    .icon,
-    i {
-        margin-right: 0.125rem;
     }
 
     .bar {
