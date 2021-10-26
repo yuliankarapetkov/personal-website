@@ -6,7 +6,11 @@
 </script>
 
 <div class="project">
-    <div class="thumb" style="background-image: url({project.imageUrl});" />
+    <div class="thumb" style="background-image: url({project.imageUrl});">
+        <a href={project.sourceUrl} class="overlay">
+            {project.name}
+        </a>
+    </div>
 
     <div class="content">
         <div class="name">
@@ -42,6 +46,34 @@
         background-repeat: no-repeat;
         background-size: cover;
         height: 18rem;
+        position: relative;
+        border-radius: var(--border-radius);
+    }
+
+    .overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        background: var(--accent-color);
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+        border-radius: var(--border-radius);
+        text-decoration: none;
+
+        opacity: 0;
+    }
+
+    .thumb:hover .overlay {
+        opacity: 0.7;
+        transition: all .3s ease 0s;
     }
 
     .content {
