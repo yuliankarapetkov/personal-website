@@ -123,7 +123,7 @@
     a {
         text-decoration: none;
         color: white;
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
         font-size: 0.875rem;
     }
 

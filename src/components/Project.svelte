@@ -7,7 +7,7 @@
 
 <div class="project">
     <div class="thumb" style="background-image: url({project.imageUrl});">
-        <a href={project.sourceUrl} class="overlay">
+        <a href={project.sourceUrl} target="_blank" class="overlay">
             {project.name}
         </a>
     </div>
@@ -95,7 +95,7 @@
     span {
         background-color: white;
         padding: 0.25rem 0.75rem;
-        font-size: 0.75rem;
+        font-size: 0.675rem;
         color: var(--accent-color);
         border: 1px solid var(--accent-color);
         margin-right: 0.25rem;
