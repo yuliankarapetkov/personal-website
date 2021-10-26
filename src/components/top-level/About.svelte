@@ -3,9 +3,7 @@
 
 </script>
 
-<Section
-    title="About me"
->
+<Section id="about" title="About me">
 
     <img src="/images/about.webp" alt="Me" />
 

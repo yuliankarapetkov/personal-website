@@ -34,23 +34,11 @@ import Recommendation from '../Recommendation.svelte';
 
 </script>
 
-<Section title="Recommendations">
+<Section id="recommendations" title="Recommendations">
     {#each recommendations as recommendation}
         <Recommendation {recommendation} />
     {/each}
 </Section>
 
 <style>
-    .profiles {
-        display: flex;
-        width: 100%;
-    }
-
-    .profiles:not(:first-of-type) {
-        border-top: 1px solid #b2c1ce;
-    }
-
-    .profiles :global(.profile-link):last-child {
-        border-right: none;
-    }
 </style>

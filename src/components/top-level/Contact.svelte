@@ -3,7 +3,7 @@
 
 </script>
 
-<Section title="Contact me" style="accent">
+<Section id="contact" title="Contact me" style="accent">
     <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     </p>

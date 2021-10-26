@@ -42,7 +42,7 @@
 
 </script>
 
-<Section title="Portfolio">
+<Section id="portfolio" title="Portfolio">
         
     <div>
         {#each projects as project}

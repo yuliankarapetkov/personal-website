@@ -1,10 +1,11 @@
 <script lang="ts">
-    export let title: string = '';
+    export let id: string = '';
+    export let title: string;
     export let style: 'default' | 'accent' = 'default';
 
 </script>
 
-<section class={style}>
+<section {id} class={style}>
     <div class="content">
         <h2>
             {title}
@@ -21,8 +22,8 @@
         align-items: center;
         text-align: center;
         width: 100%;
-        margin: 0 auto;
-        padding: 2rem 0 5rem;
+        padding: 5rem 0 5rem;
+        margin: -3rem auto 0;
     }
 
     .content {

@@ -59,7 +59,7 @@
 
 </script>
 
-<Section title="Skills">
+<Section id="skills" title="Skills">
     <div class="container">
 
         <div class="skills">

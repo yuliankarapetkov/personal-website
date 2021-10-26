@@ -40,7 +40,7 @@
 
 </script>
 
-<Section title="Profiles">
+<Section id="profiles" title="Profiles">
         
     <div class="profiles">
         {#each profiles.slice(0, half) as profile}
