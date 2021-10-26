@@ -3,7 +3,7 @@
 
 </script>
 
-<section class="hero">
+<section id="home" class="hero">
     <div class="content">
         <Bubble>
             Hi there!
