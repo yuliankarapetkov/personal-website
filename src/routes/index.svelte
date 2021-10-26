@@ -1,6 +1,7 @@
 <script>
     import About from '../components/top-level/About.svelte';
     import Contact from '../components/top-level/Contact.svelte';
+    import Experience from '../components/top-level/Experience.svelte';
     import Hero from '../components/top-level/Hero.svelte';
     import Portfolio from '../components/top-level/Portfolio.svelte';
     import Profiles from '../components/top-level/Profiles.svelte';
@@ -15,6 +16,8 @@
     <About />
 
     <Skills />
+
+    <Experience />
 
     <Portfolio />
 
