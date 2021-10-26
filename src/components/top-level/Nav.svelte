@@ -56,7 +56,12 @@
 <nav class:scroll>
     <div class="content">
         <div class="logo">
-            Yulian
+            <span>
+                Yulian
+            </span>
+            <span>
+                Karapetkov
+            </span>
         </div>
 
         <div>
@@ -104,10 +109,18 @@
     }
 
     .logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         color: white;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 5px;
+    }
+
+    .logo span:last-child {
+        font-size: 0.325rem;
     }
 
     ul {
