@@ -10,7 +10,7 @@ import Recommendation from '../Recommendation.svelte';
                 name: 'David Mühle',
                 role: 'CEO',
                 company: 'PlayPilot',
-                photoUrl: '/images/david.jpeg',
+                photoUrl: '/images/recommendations/david.jpeg',
                 linkedIn: 'https://www.linkedin.com/in/davidmuhle/',
                 email: 'david@playpilot.com'
             },
@@ -21,7 +21,7 @@ import Recommendation from '../Recommendation.svelte';
                 name: 'Loic Le Pichoux',
                 role: 'CEO',
                 company: 'KLEAR',
-                photoUrl: '/images/loic.jpeg',
+                photoUrl: '/images/recommendations/loic.jpeg',
                 linkedIn: 'https://www.linkedin.com/in/loiclepichoux/',
                 email: 'loic@klearlending.com'
             },

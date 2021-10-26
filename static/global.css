@@ -70,3 +70,9 @@ button:hover,
     transition: all .25s;
     opacity: 0.92;
 }
+
+button.accent,
+.button.accent {
+    background-color: var(--accent-color);
+    color: white;
+}

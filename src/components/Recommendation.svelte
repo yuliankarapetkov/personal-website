@@ -32,7 +32,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* max-width: 600px; */
         margin-bottom: 3rem;
         background: #f7f5f5;
         padding: 2rem;
@@ -67,9 +66,6 @@
 
     blockquote {
         margin: 1rem 0 1rem;
-        /* padding: 0.5rem 1rem 0.5rem 3rem; */
-        /* border-left: 1px solid var(--main-text-color); */
-        /* font-style: italic; */
     }
 
 </style>
