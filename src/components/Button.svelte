@@ -8,12 +8,14 @@
     export let variant: 'default' | 'accent' = 'default';
     export let size: 'big' | 'small' = 'big';
 
+    $: iconHeight = size === 'big' ? '0.75rem' : '0.625rem';
+
 </script>
 
 {#if href}
     <a class="button {variant} {size}" {href} {target} on:click>
         {#if icon}
-            <Icon {icon} height="0.625rem" />
+            <Icon {icon} height={iconHeight} />
         {/if}
 
         <slot />
@@ -21,7 +23,7 @@
 {:else}
     <button type="button {variant} {size}" on:click>
         {#if icon}
-            <Icon {icon} height="0.625rem" />
+            <Icon {icon} height={iconHeight} />
         {/if}
 
         <slot />
