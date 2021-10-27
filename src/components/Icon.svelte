@@ -10,13 +10,12 @@
     {#if icon.includes('.svg')}
         <img src={`/icons/${icon}`} {alt} style="height: {height};" />
     {:else}
-        <i class={icon} style={`color: ${color};`} />
+        <i class={icon} style={color && `color: ${color};`} />
     {/if}
 </div>
 
 <style>
     .icon {
-        width: 1.75rem;
         text-align: center;
     }
 

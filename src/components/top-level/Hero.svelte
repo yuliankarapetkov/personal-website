@@ -1,5 +1,6 @@
 <script lang="ts">
     import Bubble from "../Bubble.svelte";
+import Icon from "../Icon.svelte";
     import InternalLink from "../InternalLink.svelte";
 
 </script>
@@ -23,6 +24,10 @@
             View Portfolio
        </InternalLink>
     </div>
+    
+    <InternalLink href="#about" style="">
+        <Icon icon="fas fa-arrow-down" />
+    </InternalLink>
 </section>
 
 <style>
@@ -40,6 +45,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+    }
+
+    .hero :global(a[href="#about"]) {
+        position: absolute;
+        bottom: 3rem;
+        background: white;
+        padding: 1rem;
+        border-radius: 50%;
+        box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
+    }
+
+    .hero :global(a[href="#about"]):hover {
+        transform: translateY(-2px);
+        box-shadow: none;
+        transition: all .25s;
+        opacity: 0.95;
     }
 
     .content {
