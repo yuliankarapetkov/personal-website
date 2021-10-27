@@ -1,6 +1,6 @@
 <script lang="ts">
     import Button from '../Button.svelte';
-import Icon from '../Icon.svelte';
+    import Icon from '../Icon.svelte';
     import Section from '../Section.svelte';
 
     const labels = [
@@ -54,20 +54,25 @@ import Icon from '../Icon.svelte';
 <Section id="about" title="About me" style="white">
 
     <div class="content">
-        <div class="profile">
-            <div>
-                {#each labels as { icon, text }}
-                    <div class="label">
-                        <Icon {icon} />
 
-                        {text}
-                    </div>
-                {/each}
+        <div class="details">
+
+            <div>
+                <h3>Profile</h3>
+
+                <div>
+                    {#each labels as { icon, text }}
+                        <div class="label">
+                            <Icon {icon} />
+
+                            {text}
+                        </div>
+                    {/each}
+                </div>
             </div>
 
-            <div class="hobbies-wrapper">
-
-                I also love:
+            <div>
+                <h3>Hobbies</h3>
 
                 <div class="hobbies">
                     {#each hobbies as { text, icon }}
@@ -105,16 +110,27 @@ import Icon from '../Icon.svelte';
         
     }
 
-    .profile {
+    .details {
         display: flex;
         flex-direction: column;
         flex: 1;
     }
 
+    .details > div {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        text-align: left;
+        margin: 0 0 0.5rem;
+        color: var(--secondary-text-color);
+        font-size: 1.125rem;
+    }
+
     .label {
         display: flex;
         align-items: center;
-        color: var(--secondary-text-color);
+        color: var(--faded-text-color);
     }
 
     .label :global(.icon) {
@@ -126,16 +142,8 @@ import Icon from '../Icon.svelte';
         color: var(--secondary-text-color);
     }
 
-    .hobbies-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 1rem;
-    }
-
     .hobbies {
         display: flex;
-        margin-top: 0.5rem;
     }
 
     .hobbies :global(.icon) {
