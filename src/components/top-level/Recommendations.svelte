@@ -1,7 +1,5 @@
 <script lang="ts">
-    import type { Profile } from '../../models';
-    import ProfileLink from '../ProfileLink.svelte';
-import Recommendation from '../Recommendation.svelte';
+    import Recommendation from '../Recommendation.svelte';
     import Section from '../Section.svelte';
 
     const recommendations: any[] = [
@@ -35,10 +33,18 @@ import Recommendation from '../Recommendation.svelte';
 </script>
 
 <Section id="recommendations" title="Recommendations">
-    {#each recommendations as recommendation}
-        <Recommendation {recommendation} />
-    {/each}
+    <div>
+        {#each recommendations as recommendation}
+            <Recommendation {recommendation} />
+        {/each}
+    </div>
 </Section>
 
 <style>
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
