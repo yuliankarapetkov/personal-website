@@ -27,7 +27,7 @@
         flex-direction: column;
         margin-bottom: 2.5rem;
 
-        --bar-height: 0.375rem;
+        --bar-height: 0.5rem;
     }
 
     .name {
@@ -47,7 +47,7 @@
         border: 1px solid var(--accent-color);
         border-radius: var(--border-radius);
         height: var(--bar-height);
-        padding: 2px;
+        background: white;
     }
 
     .progress {
