@@ -72,6 +72,10 @@ import Icon from "./Icon.svelte";
         justify-content: center;
     }
 
+    .contacts a :global(.icon) {
+        margin-right: 0.25rem;
+    }
+
     .contacts a :global(i) {
         color: var(--faded-text-color);
     }

@@ -39,6 +39,10 @@
         margin-bottom: 1rem;
     }
 
+    .name :global(.icon) {
+        margin-right: 0.25rem;
+    }
+
     .bar {
         border: 1px solid var(--accent-color);
         border-radius: var(--border-radius);
