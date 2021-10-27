@@ -81,3 +81,8 @@ button.accent,
     background-color: var(--accent-color);
     color: white;
 }
+
+button.small,
+.button.small {
+    padding: 0.5rem 1rem;
+}

@@ -25,7 +25,7 @@
     }
 
     i {
-        color: var(--accent-color);
+        /* color: var(--accent-color); */
     }
 
     img {
