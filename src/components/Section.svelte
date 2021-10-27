@@ -1,7 +1,7 @@
 <script lang="ts">
     export let id: string = '';
     export let title: string;
-    export let style: 'default' | 'accent' = 'default';
+    export let style: 'default' | 'accent' | 'white' = 'default';
 
 </script>
 
@@ -22,8 +22,7 @@
         align-items: center;
         text-align: center;
         width: 100%;
-        padding: 5rem 0 3rem;
-        margin: -3rem auto 0;
+        padding: 5rem 0 5rem;
     }
 
     .content {
@@ -40,6 +39,10 @@
     .accent {
         background-color: var(--accent-color);
         color: white;
+    }
+
+    .white {
+        background-color: white;
     }
 
     .accent h2 {

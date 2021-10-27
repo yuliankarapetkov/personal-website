@@ -50,7 +50,7 @@
 
 </script>
 
-<Section id="about" title="About me">
+<Section id="about" title="About me" style="white">
 
     <div class="content">
         <div class="profile">

@@ -156,7 +156,7 @@
 
 </script>
 
-<Section id="experience" title="Experience">
+<Section id="experience" title="Experience" style="white">
         
     <div>
 
