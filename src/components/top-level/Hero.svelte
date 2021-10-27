@@ -1,5 +1,6 @@
 <script lang="ts">
     import Bubble from "../Bubble.svelte";
+    import InternalLink from "../InternalLink.svelte";
 
 </script>
 
@@ -18,9 +19,9 @@
             This is a random paragraph about me, this is a random paragraph about me.
         </p>
 
-       <button>
-           View portfolio
-       </button>
+       <InternalLink href="#portfolio" cssClass="button">
+            View Portfolio
+       </InternalLink>
     </div>
 </section>
 

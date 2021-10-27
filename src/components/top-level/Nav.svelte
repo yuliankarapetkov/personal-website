@@ -1,4 +1,6 @@
 <script lang="ts">
+    import InternalLink from "../InternalLink.svelte";
+
     let scrollY: number;
 
     const links = [
@@ -36,17 +38,6 @@
         }
     ];
 
-    const onClick = (e) => {
-        e.preventDefault();
-
-        const id = `#${e.target.href.split('#').pop()}`;
-        const element = document.querySelector(id);
-
-        element.scrollIntoView({
-            behavior: 'smooth',
-        });
-    };
-
     $: scroll = scrollY > 20;
 
 </script>
@@ -68,9 +59,9 @@
             <ul>
                 {#each links as { href, text }}
                     <li>
-                        <a {href} on:click={onClick}>
+                        <InternalLink {href}>
                             {text}
-                        </a>
+                        </InternalLink>
                     </li>
                 {/each}
             </ul>
@@ -133,7 +124,7 @@
         display: flex;
     }
 
-    a {
+    li :global(a) {
         text-decoration: none;
         color: white;
         padding: 1.5rem 1rem;
