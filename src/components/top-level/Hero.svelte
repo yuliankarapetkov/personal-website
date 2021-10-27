@@ -16,9 +16,9 @@ import Icon from "../Icon.svelte";
             a Full-Stack Developer
         </h1>
 
-        <p>
+        <!-- <p>
             This is a random paragraph about me, this is a random paragraph about me.
-        </p>
+        </p> -->
 
        <InternalLink href="#portfolio" cssClass="button">
             View Portfolio
