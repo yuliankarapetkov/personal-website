@@ -11,6 +11,14 @@
 
 </script>
 
+<svelte:head>
+
+    <title>
+        Yulian Karapetkov - Full-Stack Developer, Toptal member
+    </title>
+
+</svelte:head>
+
 <div>
     <Nav />
 
