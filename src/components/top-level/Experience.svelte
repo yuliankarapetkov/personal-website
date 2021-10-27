@@ -173,4 +173,8 @@
         border: none;
     }
 
+    div :global(.job):last-child :global(.left),
+    div :global(.job):last-child :global(.right) {
+        padding-bottom: 0;
+    }
 </style>
