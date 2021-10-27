@@ -1,11 +1,11 @@
 <script lang="ts">
     export let icon: string;
-    export let alt: string = null;
+    export let alt: string = '';
     export let height: string = '0.875rem';
 
 </script>
 
-<div class="icon" style="font-size: {height};">
+<div class="icon" style="font-size: {height};" title={alt}>
     {#if icon.includes('.svg')}
         <img src={`/icons/${icon}`} {alt} style="height: {height};" />
     {:else}
