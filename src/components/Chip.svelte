@@ -10,6 +10,6 @@
         color: white;
         margin-right: 0.25rem;
         margin-bottom: 0.5rem;
-        border-radius: 6px;
+        border-radius: var(--border-radius);
     }
 </style>

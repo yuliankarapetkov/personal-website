@@ -9,7 +9,7 @@
         font-size: 0.75rem;
         position: relative;
         background: white;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         padding: 4px 9px;
     }
 

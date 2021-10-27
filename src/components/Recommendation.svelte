@@ -33,10 +33,10 @@
         align-items: center;
         justify-content: center;
         margin-bottom: 3rem;
-        background: #f7f5f5;
+        background: white;
         padding: 2rem;
-        border-radius: 12px;
-        
+        border-radius: var(--border-radius);
+        box-shadow: 0px 24px 36px -11px rgb(0 0 0 / 9%);
     }
 
     img {
