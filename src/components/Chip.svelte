@@ -4,7 +4,7 @@
 
 <style>
     span {
-        background-color: var(--faded-text-color);
+        background-color: #c3c6cf;
         padding: 0.25rem 0.6875rem;
         font-size: 0.6875rem;
         color: white;
