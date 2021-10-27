@@ -10,7 +10,7 @@
         <h2>
             {title}
         </h2>
-
+    
         <slot />
     </div>
 </section>
@@ -22,7 +22,7 @@
         align-items: center;
         text-align: center;
         width: 100%;
-        padding: 5rem 0 5rem;
+        padding: 5rem 0 3rem;
         margin: -3rem auto 0;
     }
 
@@ -33,6 +33,8 @@
 
     h2 {
         margin-bottom: 4rem;
+        font-weight: bold;
+        color: var(--main-text-color);
     }
 
     .accent {
