@@ -14,11 +14,11 @@
     <div class="thumb" style="background-image: url({project.imageUrl});">
         <a href={project.demoUrl || project.sourceUrl} target="_blank" class="overlay">
             {#if hasDemo}
-                <Icon icon="fas fa-play" color="white" height="1.25rem" />
+                <Icon icon="fas fa-play" height="1.25rem" />
 
                 Check demo
             {:else}
-                <Icon icon="fas fa-code" color="white" height="1.25rem" />
+                <Icon icon="fas fa-code" height="1.25rem" />
 
                 See code
             {/if}
@@ -98,7 +98,6 @@
 
         background: var(--accent-color);
         color: white;
-        /* font-size: 0.875rem; */
         text-transform: uppercase;
         cursor: pointer;
         border-top-left-radius: calc(2 * var(--border-radius));
@@ -110,6 +109,10 @@
 
     .overlay :global(.icon) {
         margin-bottom: 1rem;
+    }
+    
+    .overlay :global(i) {
+        color: white;
     }
 
     .thumb:hover .overlay {

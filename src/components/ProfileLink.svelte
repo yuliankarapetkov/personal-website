@@ -19,10 +19,19 @@
     <span class="name">
         {name}
     </span>
+
+    <span class="overlay">
+        <Icon {icon} alt={name} height="1.5rem" />
+
+        <span class="name">
+            {name}
+        </span>
+    </span>
 </a>
 
 <style>
-    .profile-link {
+    .profile-link,
+    .overlay {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -31,7 +40,43 @@
         height: 9rem;
         border-right: 1px solid #b2c1ce;
         text-decoration: none;
-        color: var(--accent-color);
+        color: var(--secondary-text-color);
+    }
+
+    .profile-link {
+        position: relative;
+    }
+
+    .profile-link :global(i) {
+        color: var(--secondary-text-color);
+    }
+
+    .profile-link :global(img) {
+        filter: var(--secondary-text-color-svg);
+    }
+
+    .overlay {
+        position: absolute;
+        background: var(--accent-color);
+        color: white;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        transform: scale(0);
+    }
+
+    .overlay :global(i) {
+        color: white;
+    }
+
+    .overlay :global(img) {
+        filter: var(--main-background-color-svg);
+    }
+
+    .profile-link:hover .overlay {
+        transform: scale(1);
+        transition: all .15s ease 0s;
     }
 
     .name {
