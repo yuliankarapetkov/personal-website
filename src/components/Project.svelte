@@ -13,18 +13,15 @@
 <div class="project">
     <div class="thumb" style="background-image: url({project.imageUrl});">
         <a href={project.demoUrl || project.sourceUrl} target="_blank" class="overlay">
-            <span>
-                {#if hasDemo}
-                    <Icon icon="fas fa-play" />
+            {#if hasDemo}
+                <Icon icon="fas fa-play" color="white" height="1.25rem" />
 
-                    Check demo
-                {:else}
-                    <Icon icon="fas fa-code" />
+                Check demo
+            {:else}
+                <Icon icon="fas fa-code" color="white" height="1.25rem" />
 
-                    See code
-                {/if}
-            </span>
-
+                See code
+            {/if}
         </a>
     </div>
 
@@ -84,6 +81,7 @@
         position: relative;
         border-top-left-radius: calc(2 * var(--border-radius));
         border-top-right-radius: calc(2 * var(--border-radius));
+        border-bottom: 1px solid #f5f5f5;
     }
 
     .overlay {
@@ -100,7 +98,8 @@
 
         background: var(--accent-color);
         color: white;
-        /* font-size: 1.5rem; */
+        /* font-size: 0.875rem; */
+        text-transform: uppercase;
         cursor: pointer;
         border-top-left-radius: calc(2 * var(--border-radius));
         border-top-right-radius: calc(2 * var(--border-radius));
@@ -109,11 +108,8 @@
         opacity: 0;
     }
 
-    .overlay span {
-        display: flex;
-        align-items: center;
-        font-size: 0.875rem;
-        text-transform: uppercase;
+    .overlay :global(.icon) {
+        margin-bottom: 1rem;
     }
 
     .thumb:hover .overlay {

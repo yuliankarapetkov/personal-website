@@ -2,6 +2,7 @@
     export let icon: string;
     export let alt: string = null;
     export let height: string = '0.875rem';
+    export let color: string = null;
 
 </script>
 
@@ -9,7 +10,7 @@
     {#if icon.includes('.svg')}
         <img src={`/icons/${icon}`} {alt} style="height: {height};" />
     {:else}
-        <i class={icon} />
+        <i class={icon} style={`color: ${color};`} />
     {/if}
 </div>
 
