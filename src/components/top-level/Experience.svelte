@@ -15,7 +15,19 @@
             
             Used <strong>Svelte</strong> and <strong>Sapper</strong> for the web platform and <strong>React Native</strong> for the mobile apps.
 
-            `
+            `,
+            technologies: [
+                'Svelte',
+                'Sapper',
+                'React Native',
+                'Expo',
+                'Firebase',
+                'Firebase Cloud Functions',
+                'TypeScript',
+                'JavaScript',
+                'HTML',
+                'CSS'
+            ]
         },
         {
             company: 'Slate (Short-Term Project)',
@@ -28,7 +40,16 @@
             
             Used <strong>Angular (2+)</strong> and <strong>NgRx</strong>.
 
-            `
+            `,
+            technologies: [
+                'Angular',
+                'NgRx',
+                'RxJS',
+                'TypeScript',
+                'JavaScript',
+                'HTML',
+                'CSS'
+            ]
         },
         {
             company: 'Pikkop',
@@ -43,7 +64,21 @@
                 
             <strong>Firebase Cloud Functions</strong> and <strong>Cloud Firestore</strong>.
 
-            `
+            `,
+            technologies: [
+                'Angular',
+                'NgRx',
+                'RxJS',
+                'Firebase',
+                'Cloud Firestore',
+                'Firebase Cloud Functions',
+                'Express.js',
+                'TypeScript',
+                'JavaScript',
+                'Angular Material',
+                'HTML',
+                'CSS'
+            ]
         },
         {
             company: 'GameLeap',
@@ -54,7 +89,17 @@
 
             Built several new features of an existing gaming courses platform, using <strong>Angular (2+)</strong>, <strong>Redux</strong>, <strong>Express.js</strong> and <strong>MongoDB</strong>.
 
-            `
+            `,
+            technologies: [
+                'Angular',
+                'Redux',
+                'Express.js',
+                'MongoDB',
+                'TypeScript',
+                'JavaScript',
+                'HTML',
+                'CSS'
+            ]
         },
         {
             company: 'Klear Lending',
@@ -69,7 +114,19 @@
                 
             <strong>jQuery</strong> and <strong>AngularJS (1.x)</strong>.
 
-            `
+            `,
+            technologies: [
+                'AngularJS',
+                'jQuery',
+                'ASP.NET MVC',
+                'ASP.NET Web API',
+                'SQL',
+                'MS SQL Server',
+                'Entity Framework',
+                'JavaScript',
+                'HTML',
+                'CSS'
+            ]
         },
         {
             company: 'BankSoft',
@@ -82,7 +139,18 @@
             
             Used a wide set of technologies such as <strong>ASP</strong>, <strong>ASP.NET WebForms</strong>, <strong>WCF</strong>, <strong>MVC</strong>, <strong>Web API</strong>, <strong>PL-SQL</strong>, <strong>JavaScript</strong> and <strong>jQuery</strong>.
 
-            `
+            `,
+            technologies: [
+                'jQuery',
+                'ASP.NET WebForms',
+                'ASP',
+                'WCF',
+                'PL-SQL',
+                'Oracle',
+                'JavaScript',
+                'HTML',
+                'CSS'
+            ]
         }
     ];
 

@@ -1,6 +1,8 @@
 <script lang="ts">
+    import Chip from './Chip.svelte';
     import type { Job } from '../models';
-
+import Icon from './Icon.svelte';
+    
     export let job: Job;
 
 </script>
@@ -23,11 +25,19 @@
         </div>
 
         <div class="location">
+            <Icon icon="fas fa-map-marker-alt" alt={job.location} />
+
             {job.location}
         </div>
 
         <div class="description">
             {@html job.description}
+        </div>
+
+        <div class="technologies">
+            {#each job.technologies || [] as technology}
+                <Chip>{technology}</Chip>
+            {/each}
         </div>
     </div>
 
@@ -82,13 +92,26 @@
     }
 
     .location {
+        display: flex;
+        align-items: center;
         font-size: 0.875rem;
         color: var(--secondary-text-color);
         margin-bottom: 1rem;
     }
 
+    .location :global(.icon) {
+        width: 1rem;
+        margin-right: 0.125rem;
+    }
+
     .description {
         font-size: 0.875rem;
         color: var(--faded-text-color);
+    }
+
+    .technologies {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
     }
 </style>

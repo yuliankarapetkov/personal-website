@@ -4,4 +4,5 @@ export interface Job {
     duration: string;
     role: string;
     description: string;
+    technologies: string[];
 }

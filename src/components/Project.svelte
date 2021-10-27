@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Chip from './Chip.svelte';
     import type { Project } from '../models';
 
     export let project: Project;
@@ -29,7 +30,7 @@
 
         <div class="technologies">
             {#each project.technologies as technology}
-                <span>{technology}</span>
+                <Chip>{technology}</Chip>
             {/each}
         </div>
     </div>
@@ -90,16 +91,5 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 1rem;
-    }
-
-    span {
-        background-color: white;
-        padding: 0.25rem 0.75rem;
-        font-size: 0.675rem;
-        color: var(--accent-color);
-        border: 1px solid var(--accent-color);
-        margin-right: 0.25rem;
-        margin-bottom: 0.5rem;
-        border-radius: 6px;
     }
 </style>
