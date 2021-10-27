@@ -91,7 +91,7 @@ import Icon from '../Icon.svelte';
                 
             </p>
         
-            <Button href="" variant="accent">
+            <Button href="/" variant="accent">
                 Download CV
             </Button>
         </div>
