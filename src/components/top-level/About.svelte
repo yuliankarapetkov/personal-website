@@ -1,5 +1,6 @@
 <script lang="ts">
-    import Icon from '../Icon.svelte';
+    import Button from '../Button.svelte';
+import Icon from '../Icon.svelte';
     import Section from '../Section.svelte';
 
     const labels = [
@@ -76,17 +77,24 @@
             </div>
         </div>
 
-        <p class="description">
-            I have over seven years of professional experience as a software developer, having worked across the entire tech stack. For the last couple of years I have been using Svelte, React Native, and Angular; however, I have previously worked with Firebase, Express.js, ASP.NET, 
-            
-            and <a href="#skills">various other technologies</a>.
+        <div class="description">
+            <p>
+                I have over seven years of professional experience as a software developer, having worked across the entire tech stack. For the last couple of years I have been using Svelte, React Native, and Angular; however, I have previously worked with Firebase, Express.js, ASP.NET, 
+                
+                and <a href="#skills">various other technologies</a>.
 
-            <br /> <br />
+                <br /> <br />
 
-            I am also a member of 
-            
-            <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. In addition, I feel confident working in a fully remote environment as I have been doing so since August 2017.
-        </p>
+                I am also a member of 
+                
+                <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. In addition, I feel confident working in a fully remote environment as I have been doing so since August 2017.
+                
+            </p>
+        
+            <Button href="" variant="accent">
+                Download CV
+            </Button>
+        </div>
     </div>
 
 </Section>
@@ -143,6 +151,9 @@
         color: var(--faded-text-color);
         text-align: left;
         flex: 2;
-        margin: 0;
+    }
+
+    .description p {
+        margin: 0 0 1rem;
     }
 </style>
