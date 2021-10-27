@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Button from '../Button.svelte';
     import Section from '../Section.svelte';
 
 </script>
@@ -13,17 +14,13 @@
             yulian.karapetkov@gmail.com
         </a>
 
-        <a class="button" href="mailto:yulian.karapetkov@gmail.com">
+        <Button href="mailto:yulian.karapetkov@gmail.com">
             Hire me
-        </a>
+        </Button>
     </div>
 </Section>
 
 <style>
-    h2 {
-        color: white;
-    }
-
     p {
         margin: 0 0 3rem;
     }

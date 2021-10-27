@@ -1,5 +1,7 @@
 <script lang="ts">
+    import Button from './Button.svelte';
     import Chip from './Chip.svelte';
+    import Icon from './Icon.svelte';
     import type { Project } from '../models';
 
     export let project: Project;
@@ -18,14 +20,14 @@
             {project.name}
         </div>
 
-        <a class="button accent" href={project.sourceUrl} target="_blank">
+        <Button href={project.sourceUrl} target="_blank" icon="fas fa-code">
             Code
-        </a>
+        </Button>
 
         {#if project.demoUrl}
-            <a class="button accent" href={project.demoUrl} target="_blank">
+            <Button href={project.demoUrl} target="_blank" icon="fas fa-play">
                 Demo
-            </a>
+            </Button>
         {/if}
 
         <div class="technologies">

@@ -1,6 +1,6 @@
 <script lang="ts">
     export let icon: string;
-    export let alt: string;
+    export let alt: string = null;
     export let height: string = '0.875rem';
 
 </script>
