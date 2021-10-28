@@ -42,6 +42,7 @@
     ];
 
     $: scroll = scrollY > 20;
+    $: typeof document !== 'undefined' && document.body.classList.toggle('no-scroll', menuVisible);
 
 </script>
 
