@@ -139,3 +139,21 @@ button.small,
         opacity: 1;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 0.875rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1rem;
+    }
+}
