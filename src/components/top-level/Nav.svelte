@@ -94,6 +94,7 @@
     nav.scroll {
         padding: 0;
         background: var(--accent-color);
+        box-shadow: 0px 0 8px 2px rgb(0 0 0 / 35%);
         transition: all .6s ease 0s;
     }
 
@@ -146,6 +147,7 @@
         nav,
         nav.scroll {
             padding: 0.5rem 1rem;
+            box-shadow: 0px 0 8px 2px rgb(0 0 0 / 35%);
             background: var(--accent-color);
         }
 
