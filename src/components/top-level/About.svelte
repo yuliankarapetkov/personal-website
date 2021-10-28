@@ -107,7 +107,6 @@
 <style>
     .content {
         display: flex;
-        
     }
 
     .details {
@@ -163,5 +162,25 @@
 
     .description p {
         margin: 0 0 1rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .hobbies,
+        .label {
+            justify-content: center;
+        }
+
+        .description {
+            text-align: center;
+        }
     }
 </style>
