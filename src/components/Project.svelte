@@ -146,4 +146,19 @@
         flex-wrap: wrap;
         margin-top: 1rem;
     }
+
+    @media only screen and (max-width: 768px) {
+        .project {
+            width: auto;
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.75rem;
+        }
+    }
 </style>

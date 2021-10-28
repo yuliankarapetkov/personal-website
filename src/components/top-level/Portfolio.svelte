@@ -57,4 +57,10 @@
         display: flex;
         justify-content: space-evenly;
     }
+
+    @media only screen and (max-width: 768px) {
+        div {
+            flex-direction: column;
+        }
+    }
 </style>
