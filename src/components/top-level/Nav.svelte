@@ -1,7 +1,10 @@
 <script lang="ts">
+    import Icon from "../Icon.svelte";
     import InternalLink from "../InternalLink.svelte";
 
     let scrollY: number;
+
+    let menuVisible = false;
 
     const links = [
         {
@@ -56,10 +59,14 @@
         </div>
 
         <div>
-            <ul>
+            <button class="hamburger" type="button" on:click={() => menuVisible = !menuVisible}>
+                <Icon icon="fas fa-{menuVisible ? 'times' : 'bars'}" />
+            </button>
+
+            <ul class:visible={menuVisible}>
                 {#each links as { href, text }}
                     <li>
-                        <InternalLink {href}>
+                        <InternalLink {href} on:click={() => menuVisible = false}>
                             {text}
                         </InternalLink>
                     </li>
@@ -131,4 +138,48 @@
         font-size: 0.875rem;
     }
 
+    .hamburger {
+        display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        nav,
+        nav.scroll {
+            padding: 1rem 0;
+            background: var(--accent-color);
+        }
+
+        ul {
+            position: fixed;
+            top: 64px;
+            right: 0;
+            background: var(--accent-color);
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            transform: translateX(100%);
+            transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+        }
+
+        ul.visible {
+            transform: translateX(0);
+        }
+
+        li {
+            justify-content: center;
+        }
+
+        .hamburger {
+            display: inline-block;
+            background: transparent;
+            padding: 0.25rem;
+            margin-right: 0.75rem;
+        }
+
+        .hamburger :global(i) {
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
 </style>

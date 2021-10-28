@@ -1,10 +1,18 @@
 <script lang="ts">
+    import { createEventDispatcher } from 'svelte';
+
     export let href: string;
     export let cssClass: string = null;
     export let style: string = null;
 
+    const dispatch = createEventDispatcher();
+
+    const click = () => dispatch('click');
+
     const onClick = (e) => {
         e.preventDefault();
+
+        click();
 
         const href = e.target.href || e.target.closest('a').href;
 
