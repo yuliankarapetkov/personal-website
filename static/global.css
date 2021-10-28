@@ -106,3 +106,36 @@ button.small,
 .button.small {
     padding: 0.5rem 1rem;
 }
+
+/* Animations */
+.slide-right {
+    transform: translateX(-150px);
+    opacity: 0;
+    animation: slide-X 0.8s ease forwards;
+}
+
+.slide-left {
+    transform: translateX(150px);
+    opacity: 0;
+    animation: slide-X 0.8s ease forwards;
+}
+
+.slide-up {
+    transform: translateY(150px);
+    opacity: 0;
+    animation: slide-X 0.8s ease forwards;
+}
+
+@keyframes slide-X {
+    to {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes slide-Y {
+    to {
+        transform: translateY(0); 
+        opacity: 1;
+    }
+}
