@@ -7,6 +7,7 @@
     const projects: ProjectType[] = [
         {
             name: 'Todo App',
+            description: 'Sample Todo App built with Angular, NgRx Store and Firebase',
             demoUrl: 'https://sample-angular-todo-app.firebaseapp.com/',
             sourceUrl: 'https://github.com/yuliankarapetkov/todo-app',
             imageUrl: '/images/projects/todo-angular.jpeg',
@@ -23,6 +24,7 @@
         },
         {
             name: 'Rentals',
+            description: 'Sample project for apartment rentals built with Angular, NgRx Store, NestJS and PostgreSQL',
             sourceUrl: 'https://github.com/yuliankarapetkov/rentals',
             imageUrl: '/images/projects/rentals.jpeg',
             technologies: [
