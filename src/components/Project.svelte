@@ -71,7 +71,7 @@
 
 <style>
     .project {
-        width: 40%;
+        width: calc(50% - 2rem);
         display: flex;
         flex-direction: column;
         background: white;
@@ -145,6 +145,12 @@
         display: flex;
         flex-wrap: wrap;
         margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .project {
+            width: calc(50% - 1rem);
+        }
     }
 
     @media only screen and (max-width: 768px) {
