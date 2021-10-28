@@ -89,7 +89,7 @@
         font-size: 3.5rem;
         color: white;
         text-transform: none;
-        margin: 0;
+        margin: 0 0 1rem;
     }
 
     @media only screen and (max-width: 768px) {
