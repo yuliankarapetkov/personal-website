@@ -91,4 +91,33 @@
         text-transform: none;
         margin: 0;
     }
+
+    @media only screen and (max-width: 768px) {
+        .hero {
+            height: 70vh;
+        }
+
+        .content {
+            padding: 0 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .image {
+            display: none;
+        }
+
+        .hero :global(.bubble) {
+            display: none;
+        }
+
+        .hero :global(a[href="#about"]) {
+            display: none;
+        }
+    }
 </style>
