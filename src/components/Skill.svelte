@@ -1,13 +1,26 @@
 <script lang="ts">
     import Icon from "./Icon.svelte";
+	import { cubicOut } from 'svelte/easing';
+    import { tweened } from 'svelte/motion';
+    import { visible } from '../actions';
 
     export let name: string;
     export let percentage: number;
     export let icon: string;
 
+    const progress = tweened(0, {
+		duration: 1000,
+		easing: cubicOut
+	});
+
+    const onBecomeVisible = () => progress.set(percentage);
+
 </script>
 
-<div class="skill">
+<div
+    class="skill"
+    use:visible={{ onBecomeVisible }}
+>
     <span class="name">
         {#if icon}
             <Icon {icon} alt={name} />
@@ -17,7 +30,7 @@
     </span>
 
     <div class="bar">
-        <div class="progress" style="width: {percentage}%;" />
+        <div class="progress" style="width: {$progress}%;" />
     </div>
 </div>
 
