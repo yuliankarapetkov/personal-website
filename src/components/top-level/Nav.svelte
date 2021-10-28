@@ -145,7 +145,7 @@
     @media only screen and (max-width: 768px) {
         nav,
         nav.scroll {
-            padding: 1rem 0;
+            padding: 1rem;
             background: var(--accent-color);
         }
 
@@ -174,7 +174,6 @@
             display: inline-block;
             background: transparent;
             padding: 0.25rem;
-            margin-right: 0.75rem;
         }
 
         .hamburger :global(i) {
