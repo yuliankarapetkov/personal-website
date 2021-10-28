@@ -48,4 +48,15 @@
     .accent h2 {
         color: white;
     }
+
+    @media only screen and (max-width: 768px) {
+        section {
+            padding: 2rem 1rem 2rem;
+            width: auto;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+        }
+    }
 </style>
