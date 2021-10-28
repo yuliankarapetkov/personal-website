@@ -69,4 +69,14 @@
     .profiles :global(.profile-link):last-child {
         border-right: none;
     }
+
+    @media only screen and (max-width: 768px) {
+        .profiles {
+            flex-direction: column;
+        }
+
+        .profiles:not(:first-of-type) {
+            border: none;
+        }
+    }
 </style>

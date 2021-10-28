@@ -82,4 +82,20 @@
     .name {
         margin-top: 0.5rem;
     }
+
+    @media only screen and (max-width: 768px) {
+        .profile-link,
+        .overlay {
+            border: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .name {
+            font-size: 0.75rem;
+        }
+
+        .profile-link:hover .overlay {
+            transform: scale(0);
+        }
+    }
 </style>
