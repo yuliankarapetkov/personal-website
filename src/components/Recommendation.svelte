@@ -121,4 +121,34 @@
         font-size: 0.9375rem;
     }
 
+    @media only screen and (max-width: 768px) {
+        .recommendation {
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding: 1rem;
+        }
+
+        .profile {
+            margin: 0;
+            align-items: center;
+        }
+
+        .content {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 1rem;
+        }
+
+        .role {
+            font-size: 0.75rem;
+        }
+
+        blockquote {
+            font-size: 0.875rem;
+            margin: 0.5rem 0 0;
+        }
+    }
 </style>
