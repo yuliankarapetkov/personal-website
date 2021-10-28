@@ -35,7 +35,8 @@
         height: 96vh;
         min-height: 100%;
         position: relative;
-        background-color: var(--accent-color);
+        background: rgb(7,121,228);
+        background: linear-gradient(0deg, rgba(7,121,228,1) 0%, rgba(68,165,255,1) 100%);
         z-index: 0;
 
         display: flex;
@@ -81,6 +82,7 @@
 
     .image img {
         height: 100%;
+        filter: drop-shadow(0px -2px 2px rgba(50, 50, 50, 0.3));
     }
 
     h1 {
