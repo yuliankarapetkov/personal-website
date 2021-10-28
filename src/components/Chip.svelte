@@ -12,4 +12,12 @@
         margin-bottom: 0.5rem;
         border-radius: var(--border-radius);
     }
+
+    @media only screen and (max-width: 768px) {
+        span {
+            font-size: 0.625rem;
+            padding: 0.125rem 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+    }
 </style>

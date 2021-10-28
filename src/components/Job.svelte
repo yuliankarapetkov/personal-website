@@ -121,4 +121,52 @@
         flex-wrap: wrap;
         margin-top: 1rem;
     }
+
+    @media only screen and (max-width: 768px) {
+        .left,
+        .right {
+            padding: 0 1rem 3rem;
+        }
+
+        .left {
+            border-right: none;
+        }
+
+        .left::after {
+            content: none;
+        }
+
+        .duration {
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .role {
+            font-size: 0.75rem;
+        }
+
+        .company {
+            margin-bottom: 0.5rem;
+            font-size: 0.875rem;
+        }
+
+        .location {
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .location :global(i) {
+            font-size: 0.75rem;
+        }
+
+        .description {
+            font-size: 0.75rem;
+        }
+
+        .technologies {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+    }
 </style>
