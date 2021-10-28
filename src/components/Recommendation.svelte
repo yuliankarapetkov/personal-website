@@ -1,13 +1,22 @@
 <script>
-import Icon from "./Icon.svelte";
+    import Icon from "./Icon.svelte";
+    import { visible } from '../actions';
 
     export let recommendation;
 
+    let isVisible = false;
+
     const { author } = recommendation;
+
+    const onBecomeVisible = () => isVisible = true;
 
 </script>
 
-<div class="recommendation">
+<div
+    class="recommendation"
+    class:slide-up={isVisible}
+    use:visible={{ onBecomeVisible }}
+>
     <div class="profile">
         <img src={author.photoUrl} alt={author.name} />
 

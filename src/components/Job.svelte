@@ -1,25 +1,32 @@
 <script lang="ts">
     import Chip from './Chip.svelte';
     import type { Job } from '../models';
-import Icon from './Icon.svelte';
+    import Icon from './Icon.svelte';
+    import { visible } from '../actions';
     
     export let job: Job;
 
+    let isVisible = false;
+
+    const onBecomeVisible = () => isVisible = true;
+
 </script>
 
-<div class="job">
+<div class="job" use:visible={{ onBecomeVisible }}>
 
-    <div class="left">
-        <div class="duration">
-            {job.duration}
-        </div>
+    <div class="left" >
+        <div class:slide-right={isVisible}>
+            <div class="duration">
+                {job.duration}
+            </div>
 
-        <div class="role">
-            {job.role}
+            <div class="role">
+                {job.role}
+            </div>
         </div>
     </div>
 
-    <div class="right">
+    <div class="right" class:slide-left={isVisible}>
         <div class="company">
             {job.company}
         </div>

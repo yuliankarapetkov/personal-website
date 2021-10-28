@@ -3,14 +3,19 @@
     import Chip from './Chip.svelte';
     import Icon from './Icon.svelte';
     import type { Project } from '../models';
+    import { visible } from '../actions';
 
     export let project: Project;
 
+    let isVisible = false;
+
     const hasDemo = !!project.demoUrl;
+
+    const onBecomeVisible = () => isVisible = true;
 
 </script>
 
-<div class="project">
+<div class="project" class:slide-up={isVisible} use:visible={{ onBecomeVisible }}>
     <div class="thumb" style="background-image: url({project.imageUrl});">
         <a href={project.demoUrl || project.sourceUrl} target="_blank" class="overlay">
             {#if hasDemo}
