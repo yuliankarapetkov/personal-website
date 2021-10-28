@@ -21,8 +21,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
-        padding: 5rem 0 5rem;
+        padding: 5rem 2rem 5rem;
     }
 
     .content {

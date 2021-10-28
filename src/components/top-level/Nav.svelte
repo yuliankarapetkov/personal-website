@@ -82,7 +82,7 @@
         display: flex;
         justify-content: center;
         
-        padding: 1rem 0;
+        padding: 1rem 2rem;
         background: transparent;
 
         position: fixed;
@@ -93,7 +93,7 @@
     }
 
     nav.scroll {
-        padding: 0;
+        padding: 0 2rem;
         background: var(--accent-color);
         box-shadow: 0px 0 8px 2px rgb(0 0 0 / 35%);
         transition: all .6s ease 0s;
@@ -127,6 +127,7 @@
         display: flex;
         list-style: none;
         margin: 0;
+        padding: 0;
     }
 
     li {
@@ -142,6 +143,12 @@
 
     .hamburger {
         display: none;
+    }
+
+    @media only screen and (max-width: 1024px) {
+        li :global(a) {
+            padding: 1.5rem 0.75rem;
+        }
     }
 
     @media only screen and (max-width: 768px) {
