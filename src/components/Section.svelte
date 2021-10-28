@@ -51,7 +51,7 @@
 
     @media only screen and (max-width: 768px) {
         section {
-            padding: 2rem 1rem 2rem;
+            padding: 3rem 1rem 2rem;
             width: auto;
         }
 

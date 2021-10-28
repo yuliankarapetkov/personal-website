@@ -145,13 +145,13 @@
     @media only screen and (max-width: 768px) {
         nav,
         nav.scroll {
-            padding: 1rem;
+            padding: 0.5rem 1rem;
             background: var(--accent-color);
         }
 
         ul {
             position: fixed;
-            top: 64px;
+            top: 46px;
             right: 0;
             background: var(--accent-color);
             flex-direction: column;
@@ -178,7 +178,7 @@
 
         .hamburger :global(i) {
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.375rem;
         }
     }
 </style>
