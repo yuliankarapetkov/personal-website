@@ -49,6 +49,8 @@
         }
     ];
 
+    const CV_HREF = 'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=b3ac5c9c-848c-4d4a-96ff-4416d9e0fa27';
+
 </script>
 
 <Section id="about" title="About me" style="white">
@@ -96,7 +98,7 @@
                 
             </p>
         
-            <Button href="/" variant="accent" icon="fas fa-cloud-download-alt">
+            <Button href={CV_HREF} target="_blank" variant="accent" icon="fas fa-cloud-download-alt">
                 Download CV
             </Button>
         </div>
