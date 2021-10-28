@@ -14,8 +14,6 @@ export function visible (element, { desktopOnly = true, onBecomeVisible }: Visib
     const handleScroll = () => {
         const isVisible = checkVisible(element);
 
-        console.log('handle scroll')
-
         if (isVisible) {
             window.removeEventListener('scroll', handleScroll);
 
