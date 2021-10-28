@@ -27,6 +27,8 @@ export function visible (element, { desktopOnly = true, onBecomeVisible }: Visib
 
     window.addEventListener('scroll', handleScroll);
 
+    handleScroll();
+
     return {
         destroy: () => {
             window.removeEventListener('scroll', handleScroll);
