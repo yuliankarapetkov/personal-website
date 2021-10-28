@@ -19,7 +19,7 @@
 
 <div
     class="skill"
-    use:visible={{ onBecomeVisible }}
+    use:visible={{ desktopOnly: false, onBecomeVisible }}
 >
     <span class="name">
         {#if icon}

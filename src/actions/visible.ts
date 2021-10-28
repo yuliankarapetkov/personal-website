@@ -6,12 +6,15 @@ function checkVisible (element) {
 }
 
 export interface VisibleOptions {
+    desktopOnly?: boolean;
     onBecomeVisible: () => void;
 }
 
-export function visible (element, { onBecomeVisible }: VisibleOptions): any {
+export function visible (element, { desktopOnly = true, onBecomeVisible }: VisibleOptions): any {
     const handleScroll = () => {
         const isVisible = checkVisible(element);
+
+        console.log('handle scroll')
 
         if (isVisible) {
             window.removeEventListener('scroll', handleScroll);
@@ -19,6 +22,10 @@ export function visible (element, { onBecomeVisible }: VisibleOptions): any {
             onBecomeVisible();
         }
     };
+
+    const isDesktop = window.innerWidth >= 768;
+
+    if (desktopOnly && !isDesktop) return;
 
     window.addEventListener('scroll', handleScroll);
 
