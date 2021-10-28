@@ -12,7 +12,7 @@
                 linkedIn: 'https://www.linkedin.com/in/davidmuhle/',
                 email: 'david@playpilot.com'
             },
-            text: `Yulian is a very gifted guy who is extremely good at programming. Yulian has lots of integrity and I would dare to say he is a front end genius. On top of that he team player and he is customer focused. Yulian is a professional, helpful, and very positive person. Yulian has been an essential part of the PlayPilot success and he will always be welcome back. It is a true pleasure and honor to recommend Yulian to anyone who wants to hire him.`
+            text: `Yulian is a very gifted guy who is extremely good at programming. He has lots of integrity and I would dare to say he is a frontend genius. On top of that, he's a team player and he is customer-focused. Yulian is a professional, helpful, and very positive person. He has been an essential part of the PlayPilot success and he will always be welcome back. It is a true pleasure and honor to recommend Yulian to anyone who wants to hire him.`
         },
         {
             author: {
