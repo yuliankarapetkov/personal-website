@@ -1,6 +1,6 @@
 <script lang="ts">
     import Bubble from "../Bubble.svelte";
-import Icon from "../Icon.svelte";
+    import Icon from "../Icon.svelte";
     import InternalLink from "../InternalLink.svelte";
 
 </script>
@@ -16,13 +16,13 @@ import Icon from "../Icon.svelte";
             a Full-Stack Developer
         </h1>
 
-        <!-- <p>
-            This is a random paragraph about me, this is a random paragraph about me.
-        </p> -->
-
        <InternalLink href="#portfolio" cssClass="button">
             View Portfolio
        </InternalLink>
+
+       <div class="image">
+            <img src="/images/hero.png" alt="Yulian Karapetkov" />
+       </div>
     </div>
     
     <InternalLink href="#about" style="">
@@ -32,14 +32,10 @@ import Icon from "../Icon.svelte";
 
 <style>
     .hero {
-        background-image: url(images/hero.webp);
         height: 96vh;
         min-height: 100%;
         position: relative;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-attachment: fixed;
+        background-color: var(--accent-color);
         z-index: 0;
 
         display: flex;
@@ -70,7 +66,21 @@ import Icon from "../Icon.svelte";
         align-items: flex-start;
         justify-content: center;
         height: 100%;
-        width: 60%;
+        max-width: 1024px;
+        width: 100%;
+        position: relative;
+    }
+
+    .image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 90%;
+        z-index: -1;
+    }
+
+    .image img {
+        height: 100%;
     }
 
     h1 {
@@ -78,10 +88,5 @@ import Icon from "../Icon.svelte";
         color: white;
         text-transform: none;
         margin: 0;
-    }
-
-    p {
-        margin: 1.5rem 0;
-        color: white;
     }
 </style>
