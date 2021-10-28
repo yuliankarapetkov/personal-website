@@ -88,4 +88,9 @@
         flex: calc(50% - 1rem) 0 0;
     }
 
+    @media only screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+    }
 </style>

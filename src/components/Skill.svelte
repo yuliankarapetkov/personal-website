@@ -69,4 +69,21 @@
 
         border-radius: var(--border-radius);
     }
+
+    @media only screen and (max-width: 768px) {
+        .skill {
+            margin-bottom: 1.5rem;
+            --bar-height: 0.25rem;
+        }
+
+        .name {
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .name :global(.icon) {
+            top: -1px;
+            position: relative;
+        }
+    }
 </style>
