@@ -9,13 +9,18 @@
     import Recommendations from '../components/top-level/Recommendations.svelte';
     import Skills from '../components/top-level/Skills.svelte';
 
+    const title = 'Yulian Karapetkov - Full-Stack Developer, Toptal member';
+
 </script>
 
 <svelte:head>
 
     <title>
-        Yulian Karapetkov - Full-Stack Developer, Toptal member
+        {title}
     </title>
+
+    <meta name="title" content={title} />
+    <meta name="description" content={title}>
 
 </svelte:head>
 
