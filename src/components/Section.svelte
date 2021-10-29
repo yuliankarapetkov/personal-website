@@ -33,12 +33,29 @@
         margin-bottom: 4rem;
         font-weight: bold;
         color: var(--main-text-color);
+        position: relative;
+        padding-bottom: 1rem;
+    }
+
+    h2::before {
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: -1px;
+        height: 2px;
+        width: 50px;
+        background: var(--accent-color);
+        content: "";
     }
 
     .accent {
         background-color: var(--accent-color);
         background-image: url(/pattern.png);
         color: white;
+    }
+
+    .accent h2::before {
+        background: white;
     }
 
     .white {
