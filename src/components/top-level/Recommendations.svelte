@@ -12,9 +12,7 @@
                 linkedIn: 'https://www.linkedin.com/in/jackson-holiday-wheeler/',
                 email: 'jackson@playpilot.com'
             },
-            text: `
-            Yulian is an excellent developer. His positive attitude and solution-oriented way of approaching the world has made working with him for the past 2 years one of the best professional experiences I’ve had in my career. He excels at solving problems quickly and creating robust solutions that stand the test of time. Moreover, he has superb communication skills: he expresses himself clearly and succinctly, and he is particularly skilled at clarifying complex specifications. I wholeheartedly recommend him!
-            `
+            text: `Yulian is an excellent developer. His positive attitude and solution-oriented way of approaching the world has made working with him for the past 2 years one of the best professional experiences I’ve had in my career. He excels at solving problems quickly and creating robust solutions that stand the test of time. Moreover, he has superb communication skills: he expresses himself clearly and succinctly, and he is particularly skilled at clarifying complex specifications. I wholeheartedly recommend him!`
         },
         {
             author: {
@@ -45,7 +43,7 @@
 
 </script>
 
-<Section id="recommendations" title="Recommendations">
+<Section id="recommendations" title="Recommendations" style="accent">
     <div>
         {#each recommendations as recommendation}
             <Recommendation {recommendation} />

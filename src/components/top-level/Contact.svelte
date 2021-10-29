@@ -4,7 +4,7 @@
 
 </script>
 
-<Section id="contact" title="Contact me" style="accent">
+<Section id="contact" title="Contact me">
     <!-- <p>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
     </p> -->
@@ -14,7 +14,7 @@
             yulian.karapetkov@gmail.com
         </a>
 
-        <Button href="mailto:yulian.karapetkov@gmail.com">
+        <Button variant="accent" href="mailto:yulian.karapetkov@gmail.com">
             Drop me a line
         </Button>
     </div>
@@ -32,9 +32,8 @@
     }
 
     .link {
-        color: white;
         font-size: 1.25rem;
-        font-weight: bold;
+        font-weight: 400;
         text-decoration: none;
         margin-bottom: 2rem;
     }

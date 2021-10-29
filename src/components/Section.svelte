@@ -37,6 +37,7 @@
 
     .accent {
         background-color: var(--accent-color);
+        background-image: url(/pattern.png);
         color: white;
     }
 

@@ -17,62 +17,80 @@
     class:slide-up={isVisible}
     use:visible={{ onBecomeVisible }}
 >
-    <div class="profile">
+    <blockquote>
+        <Icon icon="fas fa-quote-right" />
+
+        "{recommendation.text}"
+    </blockquote>
+
+    <div class="author">
         <img src={author.photoUrl} alt={author.name} />
+        
+        <div class="details">
+            <div class="name">
+                {author.name}
+            </div>
+    
+            <div class="role">
+                {author.role}, {author.company}
+            </div>
 
-        <div class="contacts">
-            <a href={author.linkedIn} target="_blank">
-                <Icon icon="fab fa-linkedin" height="1.125rem" />
-            </a>
-
-            <a href={`mailto:${author.email}`}>
-                <Icon icon="fas fa-envelope" height="1.125rem" />
-            </a>
+            <div class="contacts">
+                <a href={author.linkedIn} target="_blank">
+                    <Icon icon="fab fa-linkedin" height="1.125rem" />
+                </a>
+    
+                <a href={`mailto:${author.email}`}>
+                    <Icon icon="fas fa-envelope" height="1.125rem" />
+                </a>
+            </div>
         </div>
-    </div>
-
-    <div class="content">
-        <div class="name">
-            {author.name}
-        </div>
-
-        <div class="role">
-            {author.role}, {author.company}
-        </div>
-
-        <div class="contact">
-
-        </div>
-
-        <blockquote>
-            {recommendation.text}
-        </blockquote>
     </div>
 </div>
 
 <style>
     .recommendation {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         margin-bottom: 3rem;
         background: white;
-        padding: 2rem;
+        padding: 2.5rem;
         border-radius: calc(2 * var(--border-radius));
         box-shadow: 0px 0px 8px 0px rgb(0 0 0 / 5%);
-        max-width: 680px;
+        max-width: 500px;
     }
 
-    .profile {
+    .author {
         display: flex;
-        flex-direction: column;
         margin-right: 2rem;
+    }
+
+    .name {
+        font-size: 1.125rem;
+        color: var(--main-text-color);
+        font-weight: 500;
+    }
+
+    .role {
+        font-size: 0.875rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #888;
+        margin: 0.25rem;
     }
 
     img {
         height: 6rem;
         border-radius: 50%;
-        margin-bottom: 0.5rem;
-        box-shadow: 0px 0px 8px 2px rgb(0 0 0 / 5%);
+        margin-right: 1.5rem;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     .contacts {
@@ -95,30 +113,21 @@
         transform: scale(1.05);
     }
 
-    .content {
-        text-align: left;
-        margin-top: 1rem;
-    }
-
-    .name {
-        font-size: 1.25rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: var(--secondary-text-color);
-        margin-bottom: 0.25rem;
-    }
-
-    .role {
-        font-size: 0.875rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: var(--accent-color);
-    }
-
     blockquote {
-        margin: 1rem 0 1rem;
+        margin: 0 0 2.5rem;
         color: var(--secondary-text-color);
-        font-size: 0.9375rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+
+    blockquote :global(.icon) {
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+
+    blockquote :global(i) {
+        font-size: 1.5rem;
     }
 
     @media only screen and (max-width: 768px) {
@@ -128,14 +137,9 @@
             padding: 1rem;
         }
 
-        .profile {
+        .author {
             margin: 0;
             align-items: center;
-        }
-
-        .content {
-            margin-top: 0.5rem;
-            text-align: center;
         }
 
         .name {
