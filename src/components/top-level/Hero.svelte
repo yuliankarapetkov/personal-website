@@ -35,14 +35,15 @@
         height: 96vh;
         min-height: 100%;
         position: relative;
-        background: rgb(7,121,228);
-        background: linear-gradient(0deg, rgba(7,121,228,1) 0%, rgba(68,165,255,1) 100%);
         z-index: 0;
 
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+
+        background-image: url(/pattern.png);
+        background-color: var(--accent-color);
     }
 
     .hero :global(a[href="#about"]) {
