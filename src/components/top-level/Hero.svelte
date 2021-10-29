@@ -1,5 +1,4 @@
 <script lang="ts">
-    import Bubble from "../Bubble.svelte";
     import Icon from "../Icon.svelte";
     import InternalLink from "../InternalLink.svelte";
 
@@ -7,14 +6,17 @@
 
 <section id="home" class="hero">
     <div class="content">
-        <Bubble>
-            Hi there!
-        </Bubble>
-
         <h1>
-            I am Yulian Karapetkov, <br />
-            a Full-Stack Developer
+            Yulian Karapetkov
         </h1>
+
+        <h2>
+            Full-Stack Developer, Frontend Expert
+        </h2>
+
+        <p>
+            I am also a member of <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. 
+        </p>
 
        <InternalLink href="#contact" cssClass="button">
             Contact Me
@@ -88,10 +90,28 @@
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 2.8125rem;
         color: white;
         text-transform: none;
-        margin: 0 0 1rem;
+        margin: 0 0 0.25rem;
+    }
+
+    h2 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: none;
+        margin: 0;
+    }
+
+    p {
+        color: white;
+        margin: 1rem 0 1.75rem;
+    }
+
+    p a {
+        color: white;
+        text-decoration: underline;
     }
 
     @media only screen and (max-width: 768px) {
@@ -101,20 +121,18 @@
 
         .content {
             padding: 0 1rem;
-            align-items: center;
             justify-content: center;
         }
 
         h1 {
-            font-size: 2.5rem;
-            text-align: center;
+            font-size: 2.25rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
         }
 
         .image {
-            display: none;
-        }
-
-        .hero :global(.bubble) {
             display: none;
         }
 
