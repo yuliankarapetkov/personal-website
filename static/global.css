@@ -13,9 +13,8 @@ body {
     
     --main-background-color: #f8f8f8;
 
-    --main-text-color: #43485c;
-    --secondary-text-color: #636a82;
-    --faded-text-color: #999fb3;
+    --main-text-color: #081828;
+    --secondary-text-color: #6e657e;
 
     /* SVG Colors */
     /* Example: */
@@ -25,7 +24,6 @@ body {
 
     --main-text-color-svg: invert(26%) sepia(8%) saturate(1668%) hue-rotate(191deg) brightness(88%) contrast(82%);
     --secondary-text-color-svg: invert(43%) sepia(12%) saturate(718%) hue-rotate(189deg) brightness(92%) contrast(89%);
-    --faded-text-color-svg: invert(66%) sepia(13%) saturate(382%) hue-rotate(189deg) brightness(95%) contrast(87%);
 
     /* Other */
     --border-radius: 4px;

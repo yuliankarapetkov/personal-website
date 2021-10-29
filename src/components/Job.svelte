@@ -113,7 +113,7 @@
 
     .description {
         font-size: 0.875rem;
-        color: var(--faded-text-color);
+        color: var(--secondary-text-color);
     }
 
     .technologies {

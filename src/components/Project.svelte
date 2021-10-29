@@ -138,7 +138,7 @@
 
     p {
         font-size: 0.9375rem;
-        color: var(--faded-text-color);
+        color: var(--secondary-text-color);
     }
 
     .technologies {

@@ -131,7 +131,7 @@
     .label {
         display: flex;
         align-items: center;
-        color: var(--faded-text-color);
+        color: var(--secondary-text-color);
     }
 
     .label :global(.icon) {
@@ -157,7 +157,7 @@
     }
 
     .description {
-        color: var(--faded-text-color);
+        color: var(--secondary-text-color);
         text-align: left;
         flex: 2;
     }

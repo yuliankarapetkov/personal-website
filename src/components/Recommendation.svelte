@@ -86,7 +86,7 @@
     }
 
     .contacts a :global(i) {
-        color: var(--faded-text-color);
+        color: var(--secondary-text-color);
     }
 
     .contacts a:hover :global(i) {
@@ -117,7 +117,7 @@
 
     blockquote {
         margin: 1rem 0 1rem;
-        color: var(--faded-text-color);
+        color: var(--secondary-text-color);
         font-size: 0.9375rem;
     }
 
