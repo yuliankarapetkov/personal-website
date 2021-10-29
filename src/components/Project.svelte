@@ -160,11 +160,11 @@
         }
 
         .name {
-            font-size: 1rem;
+            font-size: 1.125rem;
         }
 
         p {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
         }
     }
 </style>

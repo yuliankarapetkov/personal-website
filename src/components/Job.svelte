@@ -133,30 +133,30 @@
         }
 
         .duration {
-            font-size: 0.75rem;
+            font-size: 0.9375rem;
             margin-bottom: 0.5rem;
         }
 
         .role {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
         }
 
         .company {
             margin-bottom: 0.5rem;
-            font-size: 0.875rem;
+            font-size: 0.9375rem;
         }
 
         .location {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
             margin-bottom: 0.5rem;
         }
 
         .location :global(i) {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
         }
 
         .description {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
         }
 
         .technologies {

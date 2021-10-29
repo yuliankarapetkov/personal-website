@@ -70,6 +70,7 @@
         font-size: 1.125rem;
         color: var(--main-text-color);
         font-weight: 500;
+        text-align: left;
     }
 
     .role {
@@ -134,7 +135,7 @@
         .recommendation {
             flex-direction: column;
             margin-bottom: 1rem;
-            padding: 1rem;
+            padding: 1.5rem;
         }
 
         .author {
@@ -152,7 +153,7 @@
 
         blockquote {
             font-size: 0.875rem;
-            margin: 0.5rem 0 0;
+            margin: 0 0 1rem;
         }
     }
 </style>

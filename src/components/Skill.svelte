@@ -77,7 +77,7 @@
         }
 
         .name {
-            font-size: 0.75rem;
+            font-size: 0.875rem;
             margin-bottom: 0.5rem;
         }
 
