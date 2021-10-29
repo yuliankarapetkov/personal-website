@@ -4,27 +4,23 @@
 
 </script>
 
-<Section id="contact" title="Contact me">
-    <!-- <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-    </p> -->
-
+<Section
+    id="contact"
+    title="Contact me"
+    description="If you want to hire me for your project, don't hesitate to contact me."
+>
     <div>
         <a class="link" href="mailto:yulian.karapetkov@gmail.com">
             yulian.karapetkov@gmail.com
         </a>
 
         <Button variant="accent" href="mailto:yulian.karapetkov@gmail.com">
-            Drop me a line
+            Contact Me
         </Button>
     </div>
 </Section>
 
 <style>
-    p {
-        margin: 0 0 3rem;
-    }
-
     div {
         display: flex;
         flex-direction: column;

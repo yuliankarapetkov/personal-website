@@ -93,5 +93,9 @@
         h2 {
             margin-bottom: 2rem;
         }
+
+        p {
+            font-size: 0.875rem;
+        }
     }
 </style>
