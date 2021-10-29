@@ -15,7 +15,7 @@
         </h2>
 
         <p>
-            I am also a member of <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. 
+            Member of <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. 
         </p>
 
        <InternalLink href="#contact" cssClass="button">
