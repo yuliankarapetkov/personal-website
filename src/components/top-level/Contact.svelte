@@ -36,5 +36,6 @@
         font-weight: 400;
         text-decoration: none;
         margin-bottom: 2rem;
+        color: var(--secondary-text-color);
     }
 </style>
