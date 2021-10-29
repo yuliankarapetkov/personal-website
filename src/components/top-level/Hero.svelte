@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Button from "../Button.svelte";
     import Icon from "../Icon.svelte";
     import InternalLink from "../InternalLink.svelte";
 
@@ -18,9 +19,9 @@
             Member of <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. 
         </p>
 
-       <InternalLink href="#contact" cssClass="button">
+       <Button href="mailto:yulian.karapetkov@gmail.com ">
             Contact Me
-       </InternalLink>
+       </Button>
 
        <div class="image">
             <img src="/images/hero.png" alt="Yulian Karapetkov" />
