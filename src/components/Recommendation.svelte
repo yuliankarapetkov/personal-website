@@ -77,7 +77,7 @@
         font-weight: 400;
         text-transform: uppercase;
         color: #888;
-        margin: 0.25rem;
+        margin: 0.25rem 0;
     }
 
     img {
