@@ -46,10 +46,11 @@
     .name {
         display: flex;
         align-items: center;
-        text-transform: uppercase;
-        font-size: 0.875rem;
+        font-size: 0.9375rem;
+        font-weight: 500;
         text-align: left;
         margin-bottom: 1rem;
+        color: #333;
     }
 
     .name :global(.icon) {
