@@ -1,53 +1,6 @@
 <script lang="ts">
     import Button from '../Button.svelte';
-    import Icon from '../Icon.svelte';
     import Section from '../Section.svelte';
-
-    const labels = [
-        {
-            text: 'Sofia, Bulgaria',
-            icon: 'fas fa-map-marker-alt'
-        },
-        {
-            text: '30 years old',
-            icon: 'fas fa-birthday-cake'
-        },
-        {
-            text: '7+ years experience',
-            icon: 'fas fa-laptop'
-        },
-        {
-            text: '4+ years working remotely',
-            icon: 'fas fa-laptop-house'
-        },
-        {
-            text: 'Avid learner',
-            icon: 'fas fa-brain'
-        }
-    ];
-
-    const hobbies = [
-        {
-            text: 'Music Production',
-            icon: 'fas fa-music'
-        },
-        {
-            text: 'Traveling',
-            icon: 'fas fa-plane'
-        },
-        {
-            text: 'Photography',
-            icon: 'fas fa-camera'
-        },
-        {
-            text: 'Fitness',
-            icon: 'fas fa-dumbbell'
-        },
-        {
-            text: 'Mindfulness and Meditation',
-            icon: 'fas fa-spa'
-        }
-    ];
 
     const CV_HREF = 'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=b3ac5c9c-848c-4d4a-96ff-4416d9e0fa27';
 
@@ -56,52 +9,33 @@
 <Section id="about" title="About me" style="white">
 
     <div class="content">
+        <p>
+            I have over seven years of professional experience as a software developer, having worked across the entire tech stack. For the last couple of years I have been using Svelte, React Native, and Angular; however, I have previously worked with Firebase, Express.js, ASP.NET, 
+            
+            and <a href="#skills">various other technologies</a>.
+
+            <br /> <br />
+
+            I am also a member of <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. In addition, I feel confident working in a fully remote environment as I have been doing so since August 2017.
+        </p>
 
         <div class="details">
-
-            <div>
-                <h3>Profile</h3>
-
-                <div>
-                    {#each labels as { icon, text }}
-                        <div class="label">
-                            <Icon {icon} />
-
-                            {text}
-                        </div>
-                    {/each}
-                </div>
+            <div class="label">
+                <span>Name:</span> Yulian Karapetkov
             </div>
 
-            <div>
-                <h3>Hobbies</h3>
+            <div class="label">
+                <span>Email:</span> <a href="mailto:yulian.karapetkov@gmail.com">yulian.karapetkov at gmail.com</a>
+            </div>
 
-                <div class="hobbies">
-                    {#each hobbies as { text, icon }}
-                        <Icon {icon} alt={text} />
-                    {/each}                  
-                </div>
+            <div class="label">
+                <span>Location:</span> Sofia, Bulgaria
             </div>
         </div>
-
-        <div class="description">
-            <p>
-                I have over seven years of professional experience as a software developer, having worked across the entire tech stack. For the last couple of years I have been using Svelte, React Native, and Angular; however, I have previously worked with Firebase, Express.js, ASP.NET, 
-                
-                and <a href="#skills">various other technologies</a>.
-
-                <br /> <br />
-
-                I am also a member of 
-                
-                <a href="https://www.toptal.com/top-3-percent">the Toptal network</a>, where only 3% of the applicants get accepted. In addition, I feel confident working in a fully remote environment as I have been doing so since August 2017.
-                
-            </p>
-        
-            <Button href={CV_HREF} target="_blank" variant="accent" icon="fas fa-cloud-download-alt">
-                Download CV
-            </Button>
-        </div>
+    
+        <Button href={CV_HREF} target="_blank" variant="accent" icon="fas fa-cloud-download-alt">
+            Download CV
+        </Button>
     </div>
 
 </Section>
@@ -109,81 +43,36 @@
 <style>
     .content {
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    p {
+        text-align: left;
+        color: #666;
+        margin-bottom: 2rem;
     }
 
     .details {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-    }
-
-    .details > div {
-        margin-bottom: 1rem;
-    }
-
-    h3 {
-        text-align: left;
-        margin: 0 0 0.5rem;
-        color: var(--secondary-text-color);
-        font-size: 1.125rem;
+        margin-bottom: 2rem;
     }
 
     .label {
         display: flex;
-        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+
+    .label a {
         color: var(--secondary-text-color);
     }
 
-    .label :global(.icon) {
-        margin-right: 0.25rem;
-        width: 1.5rem;
-    }
-
-    .label :global(i) {
-        color: var(--secondary-text-color);
-    }
-
-    .hobbies {
-        display: flex;
-    }
-
-    .hobbies :global(.icon) {
-        margin-right: 0.5rem;
-    }
-
-    .hobbies :global(i) {
-        font-size: 1.125rem;
-        color: var(--secondary-text-color);
-    }
-
-    .description {
-        color: var(--secondary-text-color);
-        text-align: left;
-        flex: 2;
-    }
-
-    .description p {
-        margin: 0 0 1rem;
+    .label span {
+        font-weight: 500;
+        margin-right: 7px;
+        color: #333;
     }
 
     @media only screen and (max-width: 768px) {
-        .content {
-            flex-direction: column;
-            align-items: center;
-        }
-
-        h3 {
-            font-size: 1rem;
-            text-align: center;
-        }
-
-        .hobbies,
-        .label {
-            justify-content: center;
-        }
-
-        .description {
-            text-align: center;
-        }
+        
     }
 </style>
