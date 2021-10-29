@@ -1,15 +1,22 @@
 <script lang="ts">
     export let id: string = '';
     export let title: string;
+    export let description: string = null;
     export let style: 'default' | 'accent' | 'white' = 'default';
 
 </script>
 
 <section {id} class={style}>
     <div class="content">
-        <h2>
+        <h2 class:has-description={!!description}>
             {title}
         </h2>
+        
+        {#if description}
+            <p>
+                {@html description}
+            </p>
+        {/if}
     
         <slot />
     </div>
@@ -35,6 +42,17 @@
         color: var(--main-text-color);
         position: relative;
         padding-bottom: 1rem;
+    }
+
+    h2.has-description {
+        margin-bottom: 0;
+    }
+
+    p {
+        color: var(--secondary-text-color);
+        font-size: 0.9375rem;
+        max-width: 480px;
+        margin: 1rem auto 4rem;
     }
 
     h2::before {
