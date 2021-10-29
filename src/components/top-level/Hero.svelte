@@ -16,7 +16,7 @@
         </h2>
 
         <p>
-            Member of <a href="https://www.toptal.com/top-3-percent">Toptal</a>, where only 3% of the applicants get accepted
+            Member of <a href="https://www.toptal.com/top-3-percent" target="_blank">Toptal</a>, where only 3% of the applicants get accepted
         </p>
 
        <Button href="mailto:yulian.karapetkov@gmail.com ">

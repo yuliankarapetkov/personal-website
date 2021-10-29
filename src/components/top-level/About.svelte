@@ -16,7 +16,7 @@
 
             <br /> <br />
 
-            I am also a member of <a href="https://www.toptal.com/top-3-percent">Toptal</a>, where only 3% of the applicants get accepted. In addition, I feel confident working in a fully remote environment as I have been doing so since August 2017.
+            I am also a member of <a href="https://www.toptal.com/top-3-percent" target="_blank">Toptal</a>, where only 3% of the applicants get accepted. In addition, I feel confident working in a fully remote environment as I have been doing so since August 2017.
         </p>
 
         <div class="details">
