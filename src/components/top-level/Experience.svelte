@@ -5,7 +5,7 @@
 
     const jobs: JobType[] = [
         {
-            company: 'Playpilot',
+            company: 'PlayPilot',
             location: 'Remote',
             duration: 'Feb 2020 - Present',
             role: 'Senior Frontend Developer',

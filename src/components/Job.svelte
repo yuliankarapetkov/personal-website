@@ -83,26 +83,22 @@
         text-align: left;
     }
 
+    .role,
+    .location {
+        color: var(--secondary-text-color);
+    }
+
+    .company,
     .duration {
         margin-bottom: 1rem;
-    }
-
-    .role {
-        font-size: 0.875rem;
-        color: var(--secondary-text-color);
-        text-transform: uppercase;
-    }
-
-    .company {
-        text-transform: uppercase;
-        margin-bottom: 1rem;
+        color: #444;
+        font-weight: 600;
+        font-size: 1.125rem;
     }
 
     .location {
         display: flex;
         align-items: center;
-        font-size: 0.875rem;
-        color: var(--secondary-text-color);
         margin-bottom: 1rem;
     }
 
@@ -112,7 +108,6 @@
     }
 
     .description {
-        font-size: 0.875rem;
         color: var(--secondary-text-color);
         margin: 0;
     }
