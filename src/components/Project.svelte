@@ -131,8 +131,8 @@
     }
 
     .name {
-        font-size: 1.5rem;
-        color: var(--secondary-text-color);
+        font-size: 1.25rem;
+        color: var(--main-text-color);
         margin: 1rem 0;
     }
 

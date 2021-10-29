@@ -44,7 +44,7 @@
 
 </script>
 
-<Section id="portfolio" title="Portfolio">
+<Section id="portfolio" title="Portfolio" style="accent">
         
     <div>
         {#each projects as project}

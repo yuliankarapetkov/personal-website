@@ -43,7 +43,7 @@
 
         <div class="technologies">
             {#each job.technologies || [] as technology}
-                <Chip>{technology}</Chip>
+                <Chip variant="accent">{technology}</Chip>
             {/each}
         </div>
     </div>
