@@ -11,7 +11,7 @@
 >
     <div>
         <a class="link" href="mailto:yulian.karapetkov@gmail.com">
-            yulian.karapetkov@gmail.com
+            yulian.karapetkov at gmail.com
         </a>
 
         <Button variant="accent" href="mailto:yulian.karapetkov@gmail.com">
