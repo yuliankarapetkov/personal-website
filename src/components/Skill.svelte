@@ -47,7 +47,6 @@
         display: flex;
         align-items: center;
         font-size: 0.9375rem;
-        font-weight: 500;
         text-align: left;
         margin-bottom: 1rem;
         color: #333;
