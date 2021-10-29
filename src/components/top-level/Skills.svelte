@@ -57,10 +57,10 @@
 
     const half = Math.ceil(skills.length / 2);  
 
-    const description = `I have previously worked with the following technologies as well: <br /> Node, Express.js, MongoDB,
-        Mongoose, AngularJS, jQuery, C#,
+    const description = `I have previously worked with the following technologies as well: <br /> AngularJS, jQuery, C#,
         ASP.NET (Core, Web API, MVC, WCF,
-        WebForms), Entity Framework, SQL
+        WebForms), MongoDB,
+        Mongoose, Entity Framework, SQL
         (PL/SQL, T-SQL), ASP.`;
 
 </script>
