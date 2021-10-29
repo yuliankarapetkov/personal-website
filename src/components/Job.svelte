@@ -37,9 +37,9 @@
             {job.location}
         </div>
 
-        <div class="description">
+        <p class="description">
             {@html job.description}
-        </div>
+        </p>
 
         <div class="technologies">
             {#each job.technologies || [] as technology}
@@ -114,6 +114,7 @@
     .description {
         font-size: 0.875rem;
         color: var(--secondary-text-color);
+        margin: 0;
     }
 
     .technologies {
