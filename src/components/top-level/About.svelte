@@ -2,7 +2,7 @@
     import Button from '../Button.svelte';
     import Section from '../Section.svelte';
 
-    const CV_HREF = 'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=b3ac5c9c-848c-4d4a-96ff-4416d9e0fa27';
+    const CV_HREF = 'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=59466abe-27e1-4c49-88dc-40e6eaf2046d';
 
 </script>
 
