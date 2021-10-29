@@ -16,8 +16,8 @@
             a Full-Stack Developer
         </h1>
 
-       <InternalLink href="#portfolio" cssClass="button">
-            View Portfolio
+       <InternalLink href="#contact" cssClass="button">
+            Contact Me
        </InternalLink>
 
        <div class="image">
