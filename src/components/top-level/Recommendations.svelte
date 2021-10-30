@@ -27,6 +27,17 @@
         },
         {
             author: {
+                name: 'Michael Horton',
+                role: 'CEO',
+                company: 'Slate',
+                photoUrl: '/images/recommendations/michael.jpeg',
+                linkedIn: 'https://www.linkedin.com/in/mshorto/',
+                email: 'michael@slatehq.com',
+            },
+            text: `Yulian is a skilled developer as well as a great communicator. We hired Yulian to lead the front-end development of the initial version of our web product and he did an amazing job. He was knowledgeable, skilled and detail oriented. He got the job done in a very reasonable timetable and was a pleasure to work with the entire time.`
+        },
+        {
+            author: {
                 name: 'Loic Le Pichoux',
                 role: 'CEO',
                 company: 'KLEAR',
