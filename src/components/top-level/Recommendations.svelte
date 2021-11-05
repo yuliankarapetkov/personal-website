@@ -8,7 +8,7 @@
                 name: 'Jackson Holiday Wheeler',
                 role: 'CTO',
                 company: 'PlayPilot',
-                photoUrl: '/images/recommendations/jackson.jpeg',
+                photoUrl: '/images/recommendations/jackson.jpg',
                 linkedIn: 'https://www.linkedin.com/in/jackson-holiday-wheeler/',
                 email: 'jackson@playpilot.com'
             },
@@ -19,7 +19,7 @@
                 name: 'David Mühle',
                 role: 'CEO',
                 company: 'PlayPilot',
-                photoUrl: '/images/recommendations/david.jpeg',
+                photoUrl: '/images/recommendations/david.jpg',
                 linkedIn: 'https://www.linkedin.com/in/davidmuhle/',
                 email: 'david@playpilot.com'
             },
@@ -30,7 +30,7 @@
                 name: 'Michael Horton',
                 role: 'CEO',
                 company: 'Slate',
-                photoUrl: '/images/recommendations/michael.jpeg',
+                photoUrl: '/images/recommendations/michael.jpg',
                 linkedIn: 'https://www.linkedin.com/in/mshorto/',
                 email: 'michael@slatehq.com',
             },
@@ -41,7 +41,7 @@
                 name: 'Loic Le Pichoux',
                 role: 'CEO',
                 company: 'KLEAR',
-                photoUrl: '/images/recommendations/loic.jpeg',
+                photoUrl: '/images/recommendations/loic.jpg',
                 linkedIn: 'https://www.linkedin.com/in/loiclepichoux/',
                 email: 'loic@klearlending.com'
             },
