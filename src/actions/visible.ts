@@ -25,13 +25,13 @@ export function visible (element, { desktopOnly = true, onBecomeVisible }: Visib
 
     if (desktopOnly && !isDesktop) return;
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     handleScroll();
 
     return {
         destroy: () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll, true);
         }
     }
 }

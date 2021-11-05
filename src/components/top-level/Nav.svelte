@@ -1,6 +1,7 @@
 <script lang="ts">
     import Icon from "../Icon.svelte";
     import InternalLink from "../InternalLink.svelte";
+    import { onMount } from 'svelte';
 
     let scrollY: number;
 
@@ -41,16 +42,26 @@
         }
     ];
 
+    const scrollHandler = () => {
+        ({ scrollY } = window);
+    };
+
+    onMount(() => {
+        scrollHandler();
+
+        document.addEventListener('scroll', scrollHandler, { passive: true });
+
+        return () => document.removeEventListener('scroll', scrollHandler, true);
+    });
+
     $: scroll = scrollY > 20;
     $: typeof document !== 'undefined' && document.body.classList.toggle('no-scroll', menuVisible);
 
 </script>
 
-<svelte:window bind:scrollY />
-
 <nav class:scroll>
     <div class="content">
-        <div class="logo">
+        <div class="logo" title="Yulian Karapetkov's personal website v1.0.1">
             <span>
                 Yulian
             </span>
