@@ -24,7 +24,7 @@
     </blockquote>
 
     <div class="author">
-        <img src={author.photoUrl} alt={author.name} />
+        <img height="96px" width="96px" src={author.photoUrl} alt={author.name} />
         
         <div class="details">
             <div class="name">
