@@ -6,8 +6,26 @@
 
     const projects: ProjectType[] = [
         {
-            name: 'Todo App',
-            description: 'Sample Todo App built with Angular, NgRx Store and Firebase',
+            name: 'Todo app with React',
+            description: 'Sample todo app built with React, Redux Toolkit and Firebase',
+            demoUrl: 'https://todo-react-bb577.web.app/',
+            sourceUrl: 'https://github.com/yuliankarapetkov/todo-react',
+            imageUrl: '/images/projects/todo-angular.jpeg',
+            technologies: [
+                'React',
+                'Redux Toolkit',
+                'Redux-Observable',
+                'RxJS',
+                'Firebase',
+                'Cloud Firestore',
+                'TypeScript',
+                'HTML',
+                'CSS'
+            ]
+        },
+        {
+            name: 'Todo app with Angular',
+            description: 'Sample todo app built with Angular, NgRx Store and Firebase',
             demoUrl: 'https://sample-angular-todo-app.firebaseapp.com/',
             sourceUrl: 'https://github.com/yuliankarapetkov/todo-app',
             imageUrl: '/images/projects/todo-angular.jpeg',
@@ -56,13 +74,15 @@
 
 <style>
     div {
-        display: flex;
         justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 3rem;
     }
 
     @media only screen and (max-width: 768px) {
         div {
-            flex-direction: column;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
         }
     }
 </style>
