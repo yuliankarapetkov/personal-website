@@ -152,6 +152,10 @@
             margin-bottom: 1rem;
         }
 
+        .thumb {
+            height: 14rem;
+        }
+
         .name {
             font-size: 1.125rem;
         }

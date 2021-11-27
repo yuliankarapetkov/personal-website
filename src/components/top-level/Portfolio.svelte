@@ -10,7 +10,7 @@
             description: 'Sample todo app built with React, Redux Toolkit and Firebase',
             demoUrl: 'https://todo-react-bb577.web.app/',
             sourceUrl: 'https://github.com/yuliankarapetkov/todo-react',
-            imageUrl: '/images/projects/todo-angular.jpeg',
+            imageUrl: '/images/projects/todo-react.jpg',
             technologies: [
                 'React',
                 'Redux Toolkit',
@@ -26,9 +26,9 @@
         {
             name: 'Todo app with Angular',
             description: 'Sample todo app built with Angular, NgRx Store and Firebase',
-            demoUrl: 'https://sample-angular-todo-app.firebaseapp.com/',
+            demoUrl: 'https://sample-angular-todo-app.web.app/',
             sourceUrl: 'https://github.com/yuliankarapetkov/todo-app',
-            imageUrl: '/images/projects/todo-angular.jpeg',
+            imageUrl: '/images/projects/todo-angular.jpg',
             technologies: [
                 'Angular',
                 'NgRx',
@@ -83,6 +83,7 @@
     @media only screen and (max-width: 768px) {
         div {
             grid-template-columns: repeat(1, minmax(0, 1fr));
+            grid-gap: 0.5rem;
         }
     }
 </style>
