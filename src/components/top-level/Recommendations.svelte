@@ -38,6 +38,17 @@
         },
         {
             author: {
+                name: 'Lucas Introne',
+                role: 'CTO',
+                company: 'Pikkop',
+                photoUrl: '/images/recommendations/lucas.jpg',
+                linkedIn: 'https://www.linkedin.com/in/lintrone/',
+                email: 'lucas@entronic.com'
+            },
+            text: `Yulian won me over with his great attitude and communication, and backed it up with solid skills. He is intelligent, proactive, pays attention to detail, and delivers high quality work. A great human being, a great coder, and a great communicator, Yulian possesses a wide range of skills and is always open and looking to improve. Certainly a top talent, I can't wait to hire him again.`
+        },
+        {
+            author: {
                 name: 'Loic Le Pichoux',
                 role: 'CEO',
                 company: 'KLEAR',
