@@ -45,7 +45,7 @@
                 linkedIn: 'https://www.linkedin.com/in/lintrone/',
                 email: 'lucas@entronic.com'
             },
-            text: `Yulian won me over with his great attitude and communication, and backed it up with solid skills. He is intelligent, proactive, pays attention to detail, and delivers high quality work. A great human being, a great coder, and a great communicator, Yulian possesses a wide range of skills and is always open and looking to improve. Certainly a top talent, I can't wait to hire him again.`
+            text: `Yulian won me over with his attitude and communication, and backed it up with solid skills and clean code that's easy to understand and maintain. He is intelligent, proactive, reliable, a fast learner, and pays attention to detail. Whether working independently, as part of a team, or as a leader, Yulian always rose to the occasion. Certainly a top talent, I recommend him without reservation, and can't look forward to hiring him again.`
         },
         {
             author: {
