@@ -177,4 +177,10 @@
     div :global(.job):last-child :global(.right) {
         padding-bottom: 0;
     }
+
+    @media only screen and (max-width: 768px) {
+        div :global(.job):last-child :global(.left) {
+            padding-bottom: 0.5rem;
+        }
+    }
 </style>
