@@ -57,6 +57,24 @@
                 'HTML',
                 'CSS'
             ]
+        },
+        {
+            name: 'GitHub Viewer',
+            description: 'Sample project for previewing code repositories built with Angular, NgRx Store, Firebase and Angular Material',
+            sourceUrl: 'https://github.com/yuliankarapetkov/github-viewer',
+            demoUrl: 'https://githubviewer-mvp.web.app/',
+            imageUrl: '/images/projects/github-viewer.jpg',
+            technologies: [
+                'Angular',
+                'NgRx',
+                'RxJS',
+                'Firebase',
+                'Cloud Firestore',
+                'TypeScript',
+                'Angular Material',
+                'HTML',
+                'CSS'
+            ]
         }
     ];
 
