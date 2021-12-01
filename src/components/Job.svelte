@@ -119,13 +119,18 @@
     }
 
     @media only screen and (max-width: 768px) {
-        .left,
+        .job {
+            flex-direction: column;
+        }
+
         .right {
             padding: 0 1rem 3rem;
         }
 
         .left {
             border-right: none;
+            text-align: left;
+            padding: 0 1rem 0.5rem;
         }
 
         .left::after {
