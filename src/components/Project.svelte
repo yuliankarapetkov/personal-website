@@ -150,6 +150,8 @@
         .project {
             width: auto;
             margin-bottom: 1rem;
+            max-width: 420px;
+            place-self: center;
         }
 
         .thumb {
