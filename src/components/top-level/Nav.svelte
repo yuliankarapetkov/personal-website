@@ -61,7 +61,7 @@
 
 <nav class:scroll>
     <div class="content">
-        <div class="logo" title="Yulian Karapetkov v1.2.1">
+        <div class="logo" title="Yulian Karapetkov v1.2.2">
             <span>
                 Yulian
             </span>
