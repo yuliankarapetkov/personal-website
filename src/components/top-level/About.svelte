@@ -10,7 +10,7 @@
 
     <div class="content">
         <p>
-            I have over seven years of professional experience as a software developer, having worked across the entire tech stack. For the last couple of years I have been using Svelte, React Native, and Angular; however, I have previously worked with Firebase, Express.js, ASP.NET, 
+            I have over seven years of professional experience as a software developer, having worked across the entire tech stack. For the last couple of years I have been using Svelte, React, and Angular; however, I have previously worked with Firebase, Express.js, ASP.NET, 
             
             and <a href="#skills">various other technologies</a>.
 
