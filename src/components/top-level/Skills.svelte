@@ -24,6 +24,16 @@
             icon: 'fab fa-react'
         },
         {
+            name: 'Solidity',
+            percentage: 50,
+            icon: 'solidity.svg'
+        },
+        {
+            name: 'Web3.js',
+            percentage: 50,
+            icon: 'fas fa-code'
+        },
+        {
             name: 'Ionic',
             percentage: 80,
             icon: 'ionic.svg'
