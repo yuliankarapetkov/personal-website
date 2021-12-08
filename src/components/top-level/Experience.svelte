@@ -13,12 +13,13 @@
             
             Worked on developing features and maintaining the frontend of a streaming aggregator platform. 
             
-            Used <strong>Svelte</strong> and <strong>Sapper</strong> for the web platform and <strong>React Native</strong> for the mobile apps.
+            Used <strong>Svelte</strong>, <strong>Sapper</strong> and <strong>React</strong> for the web projects and <strong>React Native</strong> for the mobile apps.
 
             `,
             technologies: [
                 'Svelte',
                 'Sapper',
+                'React',
                 'React Native',
                 'Expo',
                 'Firebase',
