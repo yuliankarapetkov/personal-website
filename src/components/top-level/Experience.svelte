@@ -1,6 +1,7 @@
 <script lang="ts">
     import type { Job as JobType } from '../../models';
     import Job from '../Job.svelte';
+    import { RECOMMENDATIONS } from '../../constants';
     import Section from '../Section.svelte';
 
     const jobs: JobType[] = [
@@ -16,6 +17,7 @@
             Used <strong>Svelte</strong>, <strong>Sapper</strong> and <strong>React</strong> for the web projects and <strong>React Native</strong> for the mobile apps.
 
             `,
+            recommendation: RECOMMENDATIONS['jackson'],
             technologies: [
                 'Svelte',
                 'Sapper',
@@ -42,6 +44,7 @@
             Used <strong>Angular (2+)</strong> and <strong>NgRx</strong>.
 
             `,
+            recommendation: RECOMMENDATIONS['michael'],
             technologies: [
                 'Angular',
                 'NgRx',
@@ -66,6 +69,7 @@
             <strong>Firebase Cloud Functions</strong> and <strong>Cloud Firestore</strong>.
 
             `,
+            recommendation: RECOMMENDATIONS['lucas'],
             technologies: [
                 'Angular',
                 'NgRx',
@@ -116,6 +120,7 @@
             <strong>jQuery</strong> and <strong>AngularJS (1.x)</strong>.
 
             `,
+            recommendation: RECOMMENDATIONS['loic'],
             technologies: [
                 'AngularJS',
                 'jQuery',

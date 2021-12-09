@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
     import Icon from "./Icon.svelte";
+    import type { Recommendation } from '../models';
     import { visible } from '../actions';
 
-    export let recommendation;
+    export let recommendation: Recommendation;
 
     let isVisible = false;
 

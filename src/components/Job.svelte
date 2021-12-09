@@ -2,6 +2,7 @@
     import Chip from './Chip.svelte';
     import type { Job } from '../models';
     import Icon from './Icon.svelte';
+    import SmallRecommendation from './SmallRecommendation.svelte';
     import { visible } from '../actions';
     
     export let job: Job;
@@ -40,6 +41,10 @@
         <p class="description">
             {@html job.description}
         </p>
+
+        {#if job.recommendation}
+            <SmallRecommendation recommendation={job.recommendation} />
+        {/if}
 
         <div class="technologies">
             {#each job.technologies || [] as technology}
