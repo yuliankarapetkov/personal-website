@@ -1,5 +1,6 @@
 <script lang="ts">
     import { createEventDispatcher } from 'svelte';
+    import { linkable } from '../actions';
 
     export let href: string;
     export let cssClass: string = null;
@@ -9,23 +10,8 @@
 
     const click = () => dispatch('click');
 
-    const onClick = (e) => {
-        e.preventDefault();
-
-        click();
-
-        const href = e.target.href || e.target.closest('a').href;
-
-        const id = `#${href.split('#').pop()}`;
-        const element = document.querySelector(id);
-
-        element.scrollIntoView({
-            behavior: 'smooth',
-        });
-    };
-
 </script>
 
-<a {href} on:click={onClick} {style} class={cssClass}>
+<a {href} {style} class={cssClass} use:linkable={{ onClick: click }}>
     <slot />
 </a>
