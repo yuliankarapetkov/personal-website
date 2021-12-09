@@ -1,6 +1,7 @@
 <script lang="ts">
-    import Icon from "../Icon.svelte";
-    import InternalLink from "../InternalLink.svelte";
+    import { VERSION } from '../../constants';
+    import Icon from '../Icon.svelte';
+    import InternalLink from '../InternalLink.svelte';
     import { onMount } from 'svelte';
 
     let scrollY: number;
@@ -61,7 +62,7 @@
 
 <nav class:scroll>
     <div class="content">
-        <div class="logo" title="Yulian Karapetkov v1.2.6">
+        <div class="logo" title="Yulian Karapetkov v{VERSION}">
             <span>
                 Yulian
             </span>

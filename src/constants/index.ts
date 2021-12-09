@@ -1,5 +1,7 @@
 import type { Recommendation } from '../models';
 
+export const VERSION = '1.3.0';
+
 export const RECOMMENDATIONS: { [key: string]: Recommendation } = {
     'jackson': {
         id: 'jackson',
