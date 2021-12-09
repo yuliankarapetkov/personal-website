@@ -1,4 +1,5 @@
 export interface Recommendation {
+    id: string;
     author: {
         name: string;
         role: string;

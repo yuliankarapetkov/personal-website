@@ -4,8 +4,6 @@ export interface LinkableOptions {
 
 export function linkable (element: any, { onClick }: LinkableOptions | null = { onClick: null }): any {
     const handleClick = (e: any) => {
-        console.log('click click')
-
         e.preventDefault();
 
         if (onClick) {
@@ -15,11 +13,13 @@ export function linkable (element: any, { onClick }: LinkableOptions | null = { 
         const href = e.target.href || e.target.closest('a').href;
 
         const id = `#${href.split('#').pop()}`;
-        const element = document.querySelector(id);
+        const elementToScrollTo = document.querySelector(id);
 
-        element.scrollIntoView({
-            behavior: 'smooth',
-        });
+        if (elementToScrollTo) {
+            elementToScrollTo.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }
     };
 
     element.addEventListener('click', handleClick, true);

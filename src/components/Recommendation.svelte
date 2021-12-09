@@ -14,6 +14,7 @@
 </script>
 
 <div
+    id={recommendation.id}
     class="recommendation"
     class:slide-up={isVisible}
     use:visible={{ onBecomeVisible }}

@@ -1,23 +1,34 @@
 <script lang="ts">
     import type { Recommendation } from '../models';
+    import { linkable } from '../actions';
 
     export let recommendation: Recommendation;
 
 </script>
 
-<div class="recommendation">
-    <img src={recommendation.author.photoUrl} alt={recommendation.author.name} />
+<a href={`#${recommendation.id}`} use:linkable>
+    <div class="recommendation">
+        <img src={recommendation.author.photoUrl} alt={recommendation.author.name} />
 
-    <p>
-        <span class="author">
-            {recommendation.author.name}, {recommendation.author.role}:
-        </span>
+        <p>
+            <span class="author">
+                {recommendation.author.name}, {recommendation.author.role}:
+            </span>
 
-        {recommendation.text}
-    </p>
-</div>
+            {recommendation.text}
+        </p>
+    </div>
+</a>
 
 <style>
+    a {
+        color: var(--secondary-text-color);
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
     .recommendation {
         display: flex;
         margin: 1rem 0;
