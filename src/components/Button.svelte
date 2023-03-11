@@ -1,44 +1,45 @@
 <script lang="ts">
-    import Icon from './Icon.svelte';
+	import Icon from './Icon.svelte';
 
-    export let href: string = null;
-    export let target: string = null;
-    export let icon: string = null;
+	export let href: string = null;
+	export let target: string = null;
+	export let icon: string = null;
 
-    export let variant: 'default' | 'accent' = 'default';
-    export let size: 'big' | 'small' = 'big';
+	export let variant: 'default' | 'accent' = 'default';
+	export let size: 'big' | 'small' = 'big';
 
-    $: iconHeight = size === 'big' ? '0.75rem' : '0.625rem';
+	let element: HTMLAnchorElement | HTMLButtonElement;
 
+	$: iconHeight = size === 'big' ? '0.75rem' : '0.625rem';
+	$: title = element?.textContent?.trim() || "";
 </script>
 
 {#if href}
-    <a class="button {variant} {size}" {href} {target} on:click>
-        {#if icon}
-            <Icon {icon} height={iconHeight} />
-        {/if}
+	<a class="button {variant} {size}" {href} {target} {title} bind:this={element} on:click>
+		{#if icon}
+			<Icon {icon} height={iconHeight} />
+		{/if}
 
-        <slot />
-    </a>
+		<slot />
+	</a>
 {:else}
-    <button type="button" class="{variant} {size}" on:click>
-        {#if icon}
-            <Icon {icon} height={iconHeight} />
-        {/if}
+	<button type="button" class="{variant} {size}" {title} bind:this={element} on:click>
+		{#if icon}
+			<Icon {icon} height={iconHeight} />
+		{/if}
 
-        <slot />
-    </button>
+		<slot />
+	</button>
 {/if}
 
 <style>
-    button :global(.icon),
-    .button :global(.icon) {
-        width: auto;
-        margin-right: 0.25rem;
-    }
+	button :global(.icon),
+	.button :global(.icon) {
+		width: auto;
+		margin-right: 0.25rem;
+	}
 
-    .accent :global(i) {
-        color: white;
-    }
-
+	.accent :global(i) {
+		color: white;
+	}
 </style>
