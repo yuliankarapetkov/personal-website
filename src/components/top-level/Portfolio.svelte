@@ -10,7 +10,7 @@
             description: 'Sample todo app built with React, Redux Toolkit and Firebase',
             demoUrl: 'https://todo-react-bb577.web.app/',
             sourceUrl: 'https://github.com/yuliankarapetkov/todo-react',
-            imageUrl: '/images/projects/todo-react.jpg',
+            imageUrl: '/images/projects/todo-react.webp',
             technologies: [
                 'React',
                 'Redux Toolkit',
@@ -28,7 +28,7 @@
             description: 'Sample todo app built with Angular, NgRx Store and Firebase',
             demoUrl: 'https://sample-angular-todo-app.web.app/',
             sourceUrl: 'https://github.com/yuliankarapetkov/todo-app',
-            imageUrl: '/images/projects/todo-angular.jpg',
+            imageUrl: '/images/projects/todo-angular.webp',
             technologies: [
                 'Angular',
                 'NgRx',
@@ -44,7 +44,7 @@
             name: 'Rentals',
             description: 'Sample project for apartment rentals built with Angular, NgRx Store, NestJS and PostgreSQL',
             sourceUrl: 'https://github.com/yuliankarapetkov/rentals',
-            imageUrl: '/images/projects/rentals.jpeg',
+            imageUrl: '/images/projects/rentals.webp',
             technologies: [
                 'Angular',
                 'NgRx',
@@ -63,7 +63,7 @@
             description: 'Sample project for previewing code repositories built with Angular, NgRx Store, Firebase and Angular Material',
             sourceUrl: 'https://github.com/yuliankarapetkov/github-viewer',
             demoUrl: 'https://githubviewer-mvp.web.app/',
-            imageUrl: '/images/projects/github-viewer.jpg',
+            imageUrl: '/images/projects/github-viewer.webp',
             technologies: [
                 'Angular',
                 'NgRx',

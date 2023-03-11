@@ -24,7 +24,7 @@
        </Button>
 
        <div class="image">
-            <img src="/images/hero.png" alt="Yulian Karapetkov" />
+            <img src="/images/hero.webp" alt="Yulian Karapetkov" />
        </div>
     </div>
     
@@ -45,7 +45,7 @@
         justify-content: center;
         position: relative;
 
-        background-image: url(/pattern.png);
+        background-image: url(/pattern.webp);
         background-color: var(--accent-color);
     }
 

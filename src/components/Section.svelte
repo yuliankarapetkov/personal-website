@@ -68,7 +68,7 @@
 
     .accent {
         background-color: var(--accent-color);
-        background-image: url(/pattern.png);
+        background-image: url(/pattern.webp);
         color: white;
     }
 
