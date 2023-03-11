@@ -10,43 +10,23 @@
         },
         {
             name: 'Angular',
-            percentage: 100,
+            percentage: 90,
             icon: 'fab fa-angular'
         },
         {
             name: 'React',
-            percentage: 90,
-            icon: 'fab fa-react'
-        },
-        {
-            name: 'React Native',
-            percentage: 90,
-            icon: 'fab fa-react'
-        },
-        {
-            name: 'Solidity',
-            percentage: 50,
-            icon: 'solidity.svg'
-        },
-        {
-            name: 'Web3.js',
-            percentage: 50,
-            icon: 'fas fa-code'
-        },
-        {
-            name: 'Ionic',
             percentage: 80,
+            icon: 'fab fa-react'
+        },
+        {
+            name: 'Ionic/Capacitor',
+            percentage: 90,
             icon: 'ionic.svg'
         },
         {
             name: 'Node.js/Express.js',
             percentage: 70,
             icon: 'fab fa-node-js'
-        },
-        {
-            name: 'NestJS',
-            percentage: 80,
-            icon: 'nestjs.svg'
         },
         {
             name: 'Firebase',
@@ -67,7 +47,7 @@
 
     const half = Math.ceil(skills.length / 2);  
 
-    const description = `I have previously worked with the following technologies as well: <br /> AngularJS, jQuery, C#,
+    const description = `I have previously worked with the following technologies as well: <br /> React Native, NestJS, AngularJS, jQuery, C#,
         ASP.NET (Core, Web API, MVC, WCF,
         WebForms), MongoDB,
         Mongoose, Entity Framework, SQL
