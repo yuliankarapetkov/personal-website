@@ -84,6 +84,10 @@
         color: white;
     }
 
+    .accent p {
+        color: white;
+    }
+
     @media only screen and (max-width: 768px) {
         section {
             padding: 3rem 1rem 2rem;

@@ -109,7 +109,7 @@
 
 </script>
 
-<Section id="portfolio" title="Portfolio" style="accent">
+<Section id="portfolio" title="Portfolio" style="accent" description="This website and my resume are both powered by Svelte & SvelteKit 🚀">
         
     <div>
         {#each projects as project}
