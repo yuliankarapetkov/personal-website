@@ -7,7 +7,7 @@
     const projects: ProjectType[] = [
         {
             name: 'Masterpeace',
-            description: 'A mobile app that teaches you how to meditate. Built with SvelteKit & Capacitor',
+            description: 'Mobile app that teaches you how to meditate. Built with SvelteKit & Capacitor',
             imageUrl: '/images/projects/masterpeace.webp',
             technologies: [
                 'Svelte',
@@ -23,7 +23,7 @@
         },
         {
             name: 'TruthSense',
-            description: 'A browser extension that shows the credibility scores of news outlets. Built with Svelte & CRXJS',
+            description: 'Browser extension that shows news outlets\' credibility scores. Built with Svelte & CRXJS',
             sourceUrl: 'https://github.com/yuliankarapetkov/truthsense',
             imageUrl: '/images/projects/truthsense.webp',
             technologies: [
