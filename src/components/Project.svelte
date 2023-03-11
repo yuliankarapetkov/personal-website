@@ -18,7 +18,7 @@
 <div class="project" class:slide-up={isVisible} use:visible={{ onBecomeVisible }}>
 	<div class="thumb" style="background-image: url({project.imageUrl});">
 		<a
-			href={project.demoUrl || project.sourceUrl}
+			href={project.demoUrl || project.sourceUrl || "mailto:yulian.karapetkov@gmail.com"}
 			title={project.name}
 			target="_blank"
 			class="overlay"

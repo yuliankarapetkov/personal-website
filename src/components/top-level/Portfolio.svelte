@@ -23,7 +23,7 @@
         },
         {
             name: 'TruthSense',
-            description: 'A browser extension that shows the credibility scores of Bulgarian news websites',
+            description: 'A browser extension that shows the credibility scores of news outlets. Built with Svelte & CRXJS',
             sourceUrl: 'https://github.com/yuliankarapetkov/truthsense',
             imageUrl: '/images/projects/truthsense.webp',
             technologies: [
