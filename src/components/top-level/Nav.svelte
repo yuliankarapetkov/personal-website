@@ -72,7 +72,7 @@
         </div>
 
         <div>
-            <button class="hamburger" type="button" on:click={() => menuVisible = !menuVisible}>
+            <button class="hamburger" type="button" title="Menu" on:click={() => menuVisible = !menuVisible}>
                 <Icon icon="fas fa-{menuVisible ? 'times' : 'bars'}" />
             </button>
 
