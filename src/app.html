@@ -7,14 +7,17 @@
 		%sveltekit.head%
 
 		<!-- Google Fonts -->
+		<link rel="DNS-prefetch" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 		<!-- Font Awesome -->
 		<link rel="preconnect" href="https://kit.fontawesome.com/">
-		<script src="https://kit.fontawesome.com/da50fbbb2c.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/da50fbbb2c.js" crossorigin="anonymous" async></script>
 		
+		<link rel="preload" fetchpriority="high" as="image" href="/images/hero.webp" type="image/png">
+
 		<!-- Global CSS -->
 		<link rel="stylesheet" href="global.css" />
 	</head>
