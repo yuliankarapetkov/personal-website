@@ -38,7 +38,7 @@
             </div>
 
             <div class="contacts">
-                <a href={author.linkedIn} target="_blank">
+                <a href={author.linkedIn} title="Recommendation by {author.name}" target="_blank">
                     <Icon icon="fab fa-linkedin" height="1.125rem" />
                 </a>
     

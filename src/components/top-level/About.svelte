@@ -11,14 +11,14 @@
 		<p>
 			I have over nine years of professional experience as a software developer, having worked
 			across the entire tech stack. For the last couple of years I have been using primarily Svelte
-			and SvelteKit but I have previously worked with React and Angular and <a href="#skills"
+			and SvelteKit but I have previously worked with React and Angular and <a href="#skills" title="Skills"
 				>various other technologies</a
 			>.
 
 			<br /> <br />
 
 			I am also a member of
-			<a href="https://www.toptal.com/top-3-percent" target="_blank">Toptal</a>, where only 3% of
+			<a href="https://www.toptal.com/top-3-percent" title="Toptal website" target="_blank">Toptal</a>, where only 3% of
 			the applicants get accepted. In addition, I feel confident working in a fully remote
 			environment as I have been doing so since August 2017.
 		</p>
@@ -30,7 +30,7 @@
 
 			<div class="label">
 				<span>Email:</span>
-				<a href="mailto:yulian.karapetkov@gmail.com">yulian.karapetkov at gmail.com</a>
+				<a title="Email address" href="mailto:yulian.karapetkov@gmail.com">yulian.karapetkov at gmail.com</a>
 			</div>
 
 			<div class="label">

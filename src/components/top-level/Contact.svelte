@@ -10,7 +10,7 @@
     description="If you want to hire me for your project, don't hesitate to contact me."
 >
     <div>
-        <a class="link" href="mailto:yulian.karapetkov@gmail.com">
+        <a class="link" href="mailto:yulian.karapetkov@gmail.com" title="Email address">
             yulian.karapetkov at gmail.com
         </a>
 

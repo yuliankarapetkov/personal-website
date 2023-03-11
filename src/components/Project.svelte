@@ -17,7 +17,7 @@
 
 <div class="project" class:slide-up={isVisible} use:visible={{ onBecomeVisible }}>
     <div class="thumb" style="background-image: url({project.imageUrl});">
-        <a href={project.demoUrl || project.sourceUrl} target="_blank" class="overlay">
+        <a href={project.demoUrl || project.sourceUrl} title={project.name} target="_blank" class="overlay">
             {#if hasDemo}
                 <Icon icon="fas fa-play" height="1.25rem" />
 

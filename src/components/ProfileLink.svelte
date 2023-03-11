@@ -10,6 +10,7 @@
 
 <a
     href={url}
+    title="{profile.name} link"
     target="_blank"
     class="profile-link"
 >
