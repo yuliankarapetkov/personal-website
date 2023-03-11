@@ -6,6 +6,35 @@
 
     const projects: ProjectType[] = [
         {
+            name: 'Masterpeace',
+            description: 'A mobile app that teaches you how to meditate. Built with SvelteKit & Capacitor',
+            imageUrl: '/images/projects/masterpeace.webp',
+            technologies: [
+                'Svelte',
+                'SvelteKit',
+                'Capacitor',
+                'Glassfy',
+                'Firebase',
+                'Cloud Firestore',
+                'TypeScript',
+                'HTML',
+                'SCSS'
+            ]
+        },
+        {
+            name: 'TruthSense',
+            description: 'A browser extension that shows the credibility scores of Bulgarian news websites',
+            sourceUrl: 'https://github.com/yuliankarapetkov/truthsense',
+            imageUrl: '/images/projects/truthsense.webp',
+            technologies: [
+                'Svelte',
+                'CRXJS',
+                'TypeScript',
+                'HTML',
+                'SCSS'
+            ]
+        },
+        {
             name: 'Todo app with React',
             description: 'Sample todo app built with React, Redux Toolkit and Firebase',
             demoUrl: 'https://todo-react-bb577.web.app/',
