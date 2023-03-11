@@ -42,7 +42,7 @@
                     <Icon icon="fab fa-linkedin" height="1.125rem" />
                 </a>
     
-                <a href={`mailto:${author.email}`}>
+                <a href={`mailto:${author.email}`} title="Contact {author.name}">
                     <Icon icon="fas fa-envelope" height="1.125rem" />
                 </a>
             </div>
