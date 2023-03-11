@@ -21,7 +21,7 @@
         <slot />
     </a>
 {:else}
-    <button type="button {variant} {size}" on:click>
+    <button type="button" class="{variant} {size}" on:click>
         {#if icon}
             <Icon {icon} height={iconHeight} />
         {/if}
