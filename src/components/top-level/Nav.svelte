@@ -14,8 +14,8 @@
             href: '#home'
         },
         {
-            text: 'About',
-            href: '#about'
+            text: 'Resume',
+            href: '#resume'
         },
         {
             text: 'Skills',

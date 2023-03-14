@@ -6,7 +6,7 @@
 		'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=fd51e6b5-fd68-4279-ac94-ea5151742439';
 </script>
 
-<Section id="about" title="About me" style="white">
+<Section id="resume" title="Resume" style="white">
 	<div class="content">
 		<p>
 			I have over nine years of professional experience as a software developer, having worked
@@ -39,7 +39,7 @@
 		</div>
 
 		<Button href={CV_HREF} target="_blank" variant="accent" icon="fas fa-cloud-download-alt">
-			Download CV
+			Download Full Resume
 		</Button>
 	</div>
 </Section>
