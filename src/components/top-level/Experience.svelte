@@ -19,6 +19,7 @@
             Integrated payments with <strong>Wyre</strong> and <strong>Tilia</strong>, added Web3 support with <strong>Ethers.js</strong>.
 
             `,
+			recommendation: RECOMMENDATIONS['ian'],
 			technologies: [
 				'Svelte',
 				'SvelteKit',
