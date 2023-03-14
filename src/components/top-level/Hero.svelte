@@ -47,6 +47,8 @@
 
         background-image: url(/pattern.webp);
         background-color: var(--accent-color);
+
+        transition: all .15s ease-in-out;
     }
 
     .hero :global(a[href="#about"]) {
