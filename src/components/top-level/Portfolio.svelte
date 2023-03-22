@@ -16,7 +16,9 @@
                 'Glassfy',
                 'Firebase',
                 'Cloud Firestore',
+                'Firebase Cloud Functions',
                 'TypeScript',
+                'GitHub Actions',
                 'HTML',
                 'SCSS'
             ]
