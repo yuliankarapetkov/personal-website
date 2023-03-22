@@ -35,8 +35,9 @@ jobs:
 
       - name: Build project
         run: npm run build
-        PUBLIC_APP_VERSION: ${{ steps.get-next-version.outputs.new-release-version }}
-        PUBLIC_APP_SHA: ${{ github.sha }}
+        env:
+          PUBLIC_APP_VERSION: ${{ steps.get-next-version.outputs.new-release-version }}
+          PUBLIC_APP_SHA: ${{ github.sha }}
 
       - name: Authenticate to Google Cloud
         uses: 'google-github-actions/auth@v1'
