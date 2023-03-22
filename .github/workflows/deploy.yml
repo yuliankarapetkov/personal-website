@@ -1,44 +1,52 @@
 name: Deploy
 
 on:
- push:
-  branches:
-   - master
+  push:
+    branches:
+      - master
 jobs:
- deploy:
-  runs-on: ubuntu-latest
+  deploy:
+    runs-on: ubuntu-latest
 
-  steps:
-   - name: Checkout repo
-     uses: actions/checkout@v3
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-   - name: Setup Node.js environment
-     uses: actions/setup-node@v3
-     with:
-      node-version: 18
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
 
-   - name: Cache dependencies
-     uses: actions/cache@v3
-     with:
-      path: ~/.npm
-      key: npm-${{ hashFiles('package-lock.json') }}
-      restore-keys: npm-
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
 
-   - name: Install dependencies
-     run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-   - name: Build project
-     run: npm run build
+      - name: Get next version
+        run: npx semantic-release --dry-run
+        id: get-next-version
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-   - name: Authenticate to Google Cloud
-     uses: 'google-github-actions/auth@v1'
-     with:
-      credentials_json: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
+      - name: Build project
+        run: npm run build
+        PUBLIC_APP_VERSION: ${{ steps.get-next-version.outputs.new-release-version }}
+        PUBLIC_APP_SHA: ${{ github.sha }}
 
-   - name: Deploy to Firebase Hosting
-     run: npm run deploy
+      - name: Authenticate to Google Cloud
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json: '${{ secrets.FIREBASE_SERVICE_ACCOUNT }}'
 
-   - name: Create release
-     run: npx semantic-release
-     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy to Firebase Hosting
+        run: npm run deploy
+
+      - name: Create release
+        run: npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
