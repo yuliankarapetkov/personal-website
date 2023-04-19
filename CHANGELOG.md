@@ -1,3 +1,11 @@
+## [1.4.4](https://github.com/yuliankarapetkov/personal-website/compare/v1.4.3...v1.4.4) (2023-04-19)
+
+
+### Bug Fixes
+
+* add new skills ([c59e6ea](https://github.com/yuliankarapetkov/personal-website/commit/c59e6ea1a3a70385394cc17b76caa2b1ee6ad31b))
+* update Resume link ([7eeba1d](https://github.com/yuliankarapetkov/personal-website/commit/7eeba1d3d037e6e00105e9da0eb5a1f9bf8d2e49))
+
 ## [1.4.3](https://github.com/yuliankarapetkov/personal-website/compare/v1.4.2...v1.4.3) (2023-04-19)
 
 
