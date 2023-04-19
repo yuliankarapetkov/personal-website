@@ -34,6 +34,16 @@
 			icon: 'firebase.svg'
 		},
 		{
+			name: 'GitHub Actions (CI/CD)',
+			percentage: 85,
+			icon: 'fab fa-github'
+		},
+		{
+			name: 'Jest/Vitest (Unit Testing)',
+			percentage: 85,
+			icon: 'fa-solid fa-flask'
+		},
+		{
 			name: 'JavaScript/TypeScript',
 			percentage: 100,
 			icon: 'fab fa-js-square'
