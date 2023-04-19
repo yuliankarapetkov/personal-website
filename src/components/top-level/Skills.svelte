@@ -1,96 +1,75 @@
 <script lang="ts">
-    import Section from '../Section.svelte';
-    import Skill from '../Skill.svelte';
+	import Section from '../Section.svelte';
+	import Skill from '../Skill.svelte';
 
-    const skills = [
-        {
-            name: 'Svelte/SvelteKit',
-            percentage: 100,
-            icon: 'svelte.svg'
-        },
-        {
-            name: 'Angular',
-            percentage: 90,
-            icon: 'fab fa-angular'
-        },
-        {
-            name: 'React',
-            percentage: 80,
-            icon: 'fab fa-react'
-        },
-        {
-            name: 'Ionic/Capacitor',
-            percentage: 90,
-            icon: 'ionic.svg'
-        },
-        {
-            name: 'Node.js/Express.js',
-            percentage: 70,
-            icon: 'fab fa-node-js'
-        },
-        {
-            name: 'Firebase',
-            percentage: 90,
-            icon: 'firebase.svg'
-        },
-        {
-            name: 'JavaScript/TypeScript',
-            percentage: 100,
-            icon: 'fab fa-js-square'
-        },
-        {
-            name: 'HTML/CSS',
-            percentage: 100,
-            icon: 'fab fa-html5'
-        }
-    ];
+	const skills = [
+		{
+			name: 'Svelte/SvelteKit',
+			percentage: 100,
+			icon: 'svelte.svg'
+		},
+		{
+			name: 'React/Next.js',
+			percentage: 95,
+			icon: 'fab fa-react'
+		},
+		{
+			name: 'Angular',
+			percentage: 90,
+			icon: 'fab fa-angular'
+		},
+		{
+			name: 'Ionic/Capacitor',
+			percentage: 90,
+			icon: 'ionic.svg'
+		},
+		{
+			name: 'Node.js/Express.js',
+			percentage: 85,
+			icon: 'fab fa-node-js'
+		},
+		{
+			name: 'Firebase',
+			percentage: 90,
+			icon: 'firebase.svg'
+		},
+		{
+			name: 'JavaScript/TypeScript',
+			percentage: 100,
+			icon: 'fab fa-js-square'
+		},
+		{
+			name: 'HTML/CSS',
+			percentage: 100,
+			icon: 'fab fa-html5'
+		}
+	];
 
-    const half = Math.ceil(skills.length / 2);  
-
-    const description = `I have previously worked with the following technologies as well: <br /> React Native, NestJS, AngularJS, jQuery, C#,
+	const description = `I have previously worked with the following technologies as well: <br /> React Native, NestJS, AngularJS, jQuery, C#,
         ASP.NET (Core, Web API, MVC, WCF,
         WebForms), MongoDB,
         Mongoose, Entity Framework, SQL
         (PL/SQL, T-SQL), ASP.`;
-
 </script>
 
-<Section
-    id="skills"
-    title="Skills"
-    {description}
->
-    <div class="container">
-
-        <div class="skills">
-            {#each skills.slice(0, half) as skill}
-                <Skill {...skill} />
-            {/each}
-        </div>
-
-        <div class="skills">
-            {#each skills.slice(half) as skill}
-                <Skill {...skill} />
-            {/each}
-        </div>
-
-    </div>
+<Section id="skills" title="Skills" {description}>
+	<div class="container">
+		{#each skills as skill}
+			<Skill {...skill} />
+		{/each}
+	</div>
 </Section>
 
 <style>
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 4rem;
+	}
 
-    .skills {
-        flex: calc(50% - 1rem) 0 0;
-    }
-
-    @media only screen and (max-width: 768px) {
-        .container {
-            flex-direction: column;
-        }
-    }
+	@media only screen and (max-width: 768px) {
+		.container {
+			grid-template-columns: 1fr;
+		}
+	}
 </style>
