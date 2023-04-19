@@ -3,7 +3,7 @@
 	import Section from '../Section.svelte';
 
 	const CV_HREF =
-		'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=fd51e6b5-fd68-4279-ac94-ea5151742439';
+		'https://firebasestorage.googleapis.com/v0/b/yulian-karapetkov.appspot.com/o/Files%2FCV_Yulian_Karapetkov.pdf?alt=media&token=b2a5bc79-b01c-428d-96f0-87e0b10b4f6d';
 </script>
 
 <Section id="resume" title="Resume" style="white">
@@ -11,16 +11,18 @@
 		<p>
 			I have over nine years of professional experience as a software developer, having worked
 			across the entire tech stack. For the last couple of years I have been using primarily Svelte
-			and SvelteKit but I have previously worked with React and Angular and <a href="#skills" title="Skills"
-				>various other technologies</a
+			and SvelteKit but I have previously worked with React and Angular and <a
+				href="#skills"
+				title="Skills">various other technologies</a
 			>.
 
 			<br /> <br />
 
 			I am also a member of
-			<a href="https://www.toptal.com/top-3-percent" title="Toptal website" target="_blank">Toptal</a>, where only 3% of
-			the applicants get accepted. In addition, I feel confident working in a fully remote
-			environment as I have been doing so since August 2017.
+			<a href="https://www.toptal.com/top-3-percent" title="Toptal website" target="_blank"
+				>Toptal</a
+			>, where only 3% of the applicants get accepted. In addition, I feel confident working in a
+			fully remote environment as I have been doing so since August 2017.
 		</p>
 
 		<div class="details">
@@ -30,7 +32,9 @@
 
 			<div class="label">
 				<span>Email:</span>
-				<a title="Email address" href="mailto:yulian.karapetkov@gmail.com">yulian.karapetkov at gmail.com</a>
+				<a title="Email address" href="mailto:yulian.karapetkov@gmail.com"
+					>yulian.karapetkov at gmail.com</a
+				>
 			</div>
 
 			<div class="label">
